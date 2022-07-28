@@ -1,0 +1,17 @@
+*.pdf
+*.ps
+*.svg
+*.midi
+*.mid
+*.log
+*.vscode
+*.afpub
+*.sublime-project
+*.sublime-workspace
+*.tmp-lilypond-*
+#*tmp-lilypond*
+*~
+include/editions/iso-b4.ily
+include/editions/us-letter.ily
+tableofcontents.ily
+appendix.ly
