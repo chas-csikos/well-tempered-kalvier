@@ -47,7 +47,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
    \pageTurn
   }
   
-  %% For printing
+  % % For printing
   % \bookpart {
   %   \markup {""}
   %   \paper {

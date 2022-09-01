@@ -1,16 +1,14 @@
 \version "2.22.2"
 
-% \include "../include/tweaks.ly"
+\include "../include/editions/us-letter.ily"
 \include "../include/common.ily"
-\include "../include/editions/us-arch-a.ily"
-
 
 \include "preludes/prelude01.ily"
 \include "fugues/fugue01.ily"
 
 \book {
   \bookOutputName "bwv846"
-  \paper { first-page-number = #2 }
+  \paper { first-page-number = #1 }
   \bookpart {
     \header {
       title       = "PRÆLUDIUM 1"

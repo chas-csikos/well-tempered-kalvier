@@ -27,7 +27,8 @@ vOne = \relative c'' {
   e g e d e g c, e g bf a g c a f e f a d, f a c bf a |
   bf g e d e g c, e g bf a g a f c bf c f a, c ef g f ef |
   d4.^\prall~ d16 c bf a g f bf8 g' e c bf g' |
-  a,16 g f e f a d, f d bf g e' f bf, a g a c s4. \bar "|."
+  a,16 g f e f a d, f d bf g e' f bf, a g a c f,4 r8 |
+  \bar "|."
 }
 
 vTwo = \relative c {
@@ -49,7 +50,7 @@ vTwo = \relative c {
   bf2. a8 c a f d f |
   g bf g e c e f16 c a g a c f, a c ef d c |
   f16 d bf a bf d f, bf d f e d e c bf a bf e g, bf e g f e |
-  f8 a, d bf8.^\trill a32 bf c8 f,4 r8 << { f'4 a8\rest } \\ { g,16\rest c a c f,8 } >>
+  f8 a, d bf8.^\trill a32 bf c8 f,4 r8 r16 c a c f,8 |
   \bar "|."
 }
 
