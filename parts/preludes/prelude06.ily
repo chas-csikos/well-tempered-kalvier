@@ -140,7 +140,10 @@ left = \relative c {
         \stemDown \shiftOn a2 \shiftOff d,_\fermata
       }
     >>
-  \bar "|."
+  \bar "|."  
+  \mark\markup{ \fontsize #-2 \musicglyph #"scripts.ufermata" }
+  \override Staff.RehearsalMark.direction = #DOWN
+  \override Staff.RehearsalMark.rotation = #'(180 0 0)
 }
 
 preludeSix = \score {
@@ -149,7 +152,7 @@ preludeSix = \score {
     \new Staff ="Up" \with { } <<
       \new Voice \right
     >>
-    \new Staff = "Down" \with { \clef bass }
+    \new Staff = "Down" \with { \consists "Mark_engraver" \clef bass }
       <<
         \new Voice \left
       >>

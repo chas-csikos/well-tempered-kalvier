@@ -36,7 +36,9 @@ right = \relative f' {
   s1
   << { \once \stemDown bf'8 r d,8. d16 d4 df8. c16 } \\ { r4 <bf af f>8. <bf af f>16 <bf g ef>4 <bf g>8. <bf g>16 } >>
   <f a ~ c>4 a32[ c a f] \once \stemDown ef f[ a c] a[ c a f] \once \stemDown ef f[ a c] \stemDown gf'[ f ef df c bf a g]
-  \once \stemUp a32 f[ a c ef] \stemUp gf[ a c] << \voiceOne { s16. s32 df,8 <c bf f>4\arpeggio <c a f> } \\ \voiceTwo { bf'16.[ c,32  df32 a bf e,] c8\arpeggio d ef4 } >> |
+  \once \stemUp a32 f[ a c ef] \stemUp gf[ a c] << \voiceOne { s16. s32 df,8 <c bf f>4\arpeggio <c a f> } \\ \voiceTwo { bf'16.[ c,32  df32 a bf e,]
+  \bar ""
+    c8\arpeggio d ef4 } >> |
   << { <f bf>4  } \\ { d4 ~ \stemUp d32 f d bf s bf d f d f d bf s bf d f cf' af f d s32*3 d32} >> |
   \oneVoice ef8\mordent ~ ef32 d c d ef d c bf a bf c bf \bar "" \staffTwo \voiceOne a g f g a g f ef d ef f ef d c bf a
   %\num

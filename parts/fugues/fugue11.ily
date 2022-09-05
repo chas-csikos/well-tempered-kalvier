@@ -288,7 +288,7 @@ vThree = \relative c {
   \oneVoice
     bf,8 c c, | % m. 71
   \set Score.measureLength = #(ly:make-moment 2 8)
-    f4 \fermata | % m. 72
+    f4_\fermata | % m. 72
   \bar "|."
 }
 

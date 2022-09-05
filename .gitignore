@@ -15,3 +15,4 @@ include/editions/iso-b4.ily
 include/editions/us-letter.ily
 tableofcontents.ily
 appendix.ly
+notes

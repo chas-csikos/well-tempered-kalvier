@@ -19,6 +19,7 @@ soprano = \relative c'' {
     R1 | % m. 2
     R1 | % m. 3
     R1 | % m. 4
+  \once\override MultiMeasureRest.staff-position = #6
     R1 | % m. 5
     R1 | % m. 6
   \override MultiMeasureRest.staff-position = #8
@@ -31,9 +32,9 @@ soprano = \relative c'' {
     R1 | % m. 12
   \normalsize
   \barNumberCheck #13
-    r8 b a fs \once \slurDashed d'( b) \once \slurDashed e( ds) | % m. 13
-    \once \slurDashed a8( gs) f'( e) \once \slurDashed  b(as) \once \slurDashed g'( fs) | % m. 14
-    es8 fs d b cs2~ | % m. 15
+    r8 b a fs \once \slurDashed d'[( b]) \once \slurDashed e[( ds]) | % m. 13
+    \once \slurDashed a8( gs) f'( e) \once \slurDashed  b([ as]) \once \slurDashed g'([ fs]) | % m. 14
+    es8[ fs] d[ b] cs2~ | % m. 15
     cs16 cs d e fs g b, as b2~ | % m. 16
     b16 es, fs gs a b cs fs, d' e fs8~ fs e16 d | % m. 17
     cs16 d e8~ e d16 cs b cs d8~ d cs16 b | % m. 18
@@ -55,14 +56,14 @@ soprano = \relative c'' {
     b8 b16 as b4~ b16 cs d e fs g b, as | % m. 32
     d2 cs4. ds8 | % m. 33
     es4 r8 fs~ fs16 es fs a gs4 | % m. 34
-    r8 fs d b g' fs b as | % m. 35
+    r8 fs d b g'[ fs] b[ as] | % m. 35
     e8 ds g4~ g16 fs gs as b g fs es | % m. 36
     fs4 f~ f16 e fs gs a b e, ds | % m. 37
     e16 fs, g a b cs d fs e cs d fs g e fs as | % m. 38
     b4 a gs fs~ | % m. 39
   \barNumberCheck #40
     fs16 es fs es fs4~ fs16 a, b cs d e fs, es | % m. 40
-    fs8 fs' d b g' fs b as | % m. 41
+    fs8[ fs'] d[ b] g'[ fs] b[ as] | % m. 41
     e8 ds r e~ e16 ds e g fs4 | % m. 42
     e16 d cs b a b cs e d b cs e fs d e gs | % m. 43
     a16 g fs e d cs b a g e fs a b g a cs | % m. 44
@@ -141,8 +142,8 @@ alto = \relative c' {
   \voiceTwo
   \barNumberCheck #21
     r8 fs d b g' fs b as | % m. 21
-    e ds c' b fs es d' cs | % m. 22
-    bs cs a fs \once \shiftOff gs2 | % m. 23
+    e[ ds] c'[ b] fs[ es] d'[ cs] | % m. 22
+    bs[ cs] a[ fs] \once \shiftOff gs2 | % m. 23
     a2~ a8 c b ds | % m. 24
     e2~ e8 d cs es | % m. 25
     fs4 r8 b,16 a g a b8~ b a16 g | % m. 26
@@ -154,16 +155,16 @@ alto = \relative c' {
     c16 a b8~ b16 a gs fs e g fs as b cs d e | % m. 31
     d16 cs8. r16 a g fs e2 | % m. 32
     r16 fs gs as b cs fs, es a2 | % m. 33
-    gs8 cs a fs d' cs fs es | % m. 34
+    gs8[ cs] a[ fs] d'[ cs] fs[ es] | % m. 34
     b8 as r b~ b16 as b d cs4~ | % m. 35
-    cs8 b e as, b2~ | % m. 36
+    cs8[ b] e[ as,] b2~ | % m. 36
     b16 as b cs d e a, gs a2~ | % m. 37
     a8 g fs4 r2 | % m. 38
     r16 fs' a g fs e ds cs b d cs b a gs a fs | % m. 39
   \barNumberCheck #40
     gs4 r16 e' d cs b a gs a b4~ | % m. 40
     b8 as r b~ b16 as b d cs4 | % m. 41
-    r8 b g e c' b e ds | % m. 42
+    r8 b g e c'[ b] e[ ds] | % m. 42
     a gs a4~ a8 gs cs b | % m. 43
     e8 r r fs, d4 r8 g | % m. 44
     a8 d c4 b a~ | % m. 45
@@ -179,7 +180,7 @@ alto = \relative c' {
   \barNumberCheck #50
     \once\small R1 | % m. 50
     r16 e' fs g a b e, ds g2~ | % m. 51
-    g8 fs es gs~ gs16 es fs gs a b d, cs | % m. 52
+    g8[ fs] es[ gs] ~ gs16 es fs gs a b d, cs | % m. 52
     ds4 es8 gs~ gs16 gs fs es fs gs a cs | % m. 53
     b16 gs a cs b d cs b cs d e d cs b as gs | % m. 54
     fs16 a gs bs cs ds e fs e ds r a gs b a gs | % m. 55
@@ -203,7 +204,7 @@ alto = \relative c' {
     b16 cs b a gs4 r16 g fs8~ fs16 e d e | % m. 71
     cs4 r16 fs e d cs2 | % m. 72
     b4 r8 fs' e4 r | % m. 73
-    r8 fs d b g' fs b as | % m. 74
+    r8 fs d b g'[ fs] b[ as] | % m. 74
     e8 ds r gs fs es fs8. e16 | % m. 75
     ds1 \bar "|." | % m. 76 \fermata
 }
@@ -216,7 +217,8 @@ tenor = \relative c' {
     R1 | % m. 2
     R1 | % m. 3
   \voiceOne
-    r8 b a fs \slurDown d'( b) \slurDashed e( ds) | % m. 4
+    r8 b a fs d' b \slurDown e( ds) | % m. 4
+    \slurDashed
     a8 (gs) f' (e) b (as) g' (fs) \slurSolid | % m. 5
     es8 fs d b cs2 | % m. 6
     b16
@@ -232,7 +234,7 @@ tenor = \relative c' {
     e8. d16 cs b a fs gs b a fs c'8 b16 a | % m. 13
     b2 e,4 b'8 a | % m. 14
   \barNumberCheck #15
-    gs8 fs fs' d e2~ | % m. 15
+    gs8[ fs] fs'[ d] e2~ | % m. 15
     e8 cs as fs d'2 | % m. 16
     cs2~ cs8 b16 a gs a b8~ | % m. 17
     b8 a16 gs fs gs a8~ a gs16 fs es fs gs8 | % m. 18
@@ -259,13 +261,13 @@ tenor = \relative c' {
     r8 b' g e c' b e ds | % m. 30
   \barNumberCheck #31
   \clef treble
-    a8 gs f' e b as g' fs | % m. 31
-    es8 fs d b cs2 | % m. 32
+    a8[ gs] f'[ e] b[ as] g'[ fs] | % m. 31
+    es8[ fs] d[ b] cs2 | % m. 32
     b2 r16 cs ds es fs gs cs, bs | % m. 33
     cs16 b a gs fs gs a cs b gs a cs d b cs es | % m. 34
     fs16 e d cs b cs d fs e cs d fs g e fs as | % m. 35
     b16 a g fs e d e cs d2~ | % m. 36
-    d8 cs b d
+    d8[ cs] b[ d]
   \clef bass
       c2~ | % m. 37
     c8 b r b~ b16 as b d cs4 | % m. 38
@@ -282,9 +284,9 @@ tenor = \relative c' {
     R1 | % m. 43
     \revert MultiMeasureRest.staff-position
   \normalsize
-    r8 a fs d b' a d cs | % m. 44
-    g8 fs ef' d a gs f' e | % m. 45
-    ds8 e cs a b2~ | % m. 46
+    r8 a fs d b'[ a] d[ cs] | % m. 44
+    g8[ fs] ef'[ d] a[ gs] f'[ e] | % m. 45
+    ds8[ e] cs[ a] b2~ | % m. 46
     b8 a4 g8~ g fs e cs | % m. 47
   \once \showStaffSwitch
   \staffOne \voiceTwo
@@ -300,7 +302,7 @@ tenor = \relative c' {
   \clef treble
       cs a fs | % m. 53
     d'8 cs fs es b as g' fs | % m. 54
-    cs8 bs a' gs fss gs e cs | % m. 55
+    cs8[ bs] a'[ gs] fss[ gs] e[ cs] | % m. 55
   \clef bass
     ds2~ ds16 gs, as bs cs ds fs, e | % m. 56
     fs4 r r2 | % m. 57
@@ -313,16 +315,16 @@ tenor = \relative c' {
   \barNumberCheck #60
   \clef treble
       fs' d b | % m. 60
-    g'8 fs b as e ds c' b | % m. 61
-    fs8 es d' cs bs cs a fs | % m. 62
+    g'8[ fs] b[ as] e[ ds] c'[ b] | % m. 61
+    fs8[ es] d'[ cs] bs[ cs] a[ fs] | % m. 62
     gs2~ gs16 cs, ds es fs gs b, a | % m. 63
     b1 | % m. 64
-    as8 fs b d e g a cs, | % m. 65
-    d8 fs g b, cs e fs as, | % m. 66
+    as8[ fs] b[ d] e[ g] a[ cs,] | % m. 65
+    d8[ fs] g[ b,] cs[ e] fs[ as,] | % m. 66
   \clef bass
-    b16 fs g a b c e, ds e8 g a cs | % m. 67
-    d8 fs, g b cs e, fs as | % m. 68
-    b8 fs d b g' fs b as | % m. 69
+    b16 fs g a b c e, ds e8[ g] a[ cs] | % m. 67
+    d8[ fs,] g[ b] cs[ e,] fs[ as] | % m. 68
+    b8[ fs] d[ b] g'[ fs] b[ as] | % m. 69
   \barNumberCheck #70
     e8 ds e2 fs4 | % m. 70
     e4 r16 b' cs d e8. e16 d cs b a | % m. 71
@@ -359,20 +361,20 @@ bass = \relative c {
     e4 d cs b~ | % m. 14
     b8 as b4~ b16 cs d e fs g b, as | % m. 15
     d2~ d16 as b cs d e fs, es | % m. 16
-    fs4 fs'8 a b d, e gs | % m. 17
-    a8 cs, d fs gs b, cs es | % m. 18
-    fs8 a, b d e g, a cs | % m. 19
+    fs4 fs'8 a b[ d,] e[ gs] | % m. 17
+    a8[ cs,] d[ fs] gs[ b,] cs[ es] | % m. 18
+    fs8[ a,] b[ d] e[ g,] a[ cs] | % m. 19
   \barNumberCheck #20
-    d8 fs, g b cs e, fs as | % m. 20
+    d8[ fs,] g[ b] cs[ e,] fs[ as] | % m. 20
     b4~ b16 cs d fs e cs d fs g e fs as | % m. 21
     b16 g fs e ds8. cs16 d e d cs b a gs fs | % m. 22
-    gs16 b a gs fs a d cs b8 gs cs cs, | % m. 23
+    gs16 b a gs fs a d cs b8[ gs] cs[ cs,] | % m. 23
     fs'16 g a b c d e, ds g2~ | % m. 24
     g16 b, cs d e fs b, as b2~ | % m. 25 %pageTurn?
-    b8 as b d e g, a cs | % m. 26
-    d8 fs, g b cs e, fs as | % m. 27
-    b8 d e g a c d fs, | % m. 28
-    g8 b c e, fs a b ds, | % m. 29
+    b8 as b d e[ g,] a[ cs] | % m. 26
+    d8[ fs,] g[ b] cs[ e,] fs[ as] | % m. 27
+    b8 d e g a[ c] d[ fs,] | % m. 28
+    g8[ b] c[ e,] fs[ a] b[ ds,] | % m. 29
   \barNumberCheck #30
     e4 r r2 | % m. 30
   \teeny
@@ -386,19 +388,19 @@ bass = \relative c {
   \revert MultiMeasureRest.staff-position
     R1 | % m. 37
   \normalsize
-    r8 e d b g' fs b as | % m. 38
-    e8 ds c' b fs es d' cs | % m. 39
+    r8 e d b g'[ fs] b[ as] | % m. 38
+    e8[ ds] c'[ b] fs[ es] d'[ cs] | % m. 39
   \barNumberCheck #40
     bs8[ cs] a fs gs2 | % m. 40
     fs16 e d cs b cs d fs e cs d fs g e fs as | % m. 41
     b16 a g fs e fs g b a fs g b c a b ds | % m. 42
-    e8 e, cs a fs'[ e a gs] | % m. 43
+    e8[ e,] cs[ a] fs'[ e a gs] | % m. 43
     d8 cs d2.~ | % m. 44
     d4 r r2 | % m. 45
     R1 | % m. 46
     r2 r8 d cs a | \noBreak % m. 47
-    fs'8 d g fs c b a' gs | % m. 48
-    d8 cs bf' a gs a fs d | % m. 49
+    fs'8[ d] g[ fs] c[ b] a'[ gs] | % m. 48
+    d8[ cs] bf'[ a] gs[ a fs d] | % m. 49
   \barNumberCheck #50
     e2 d4 r8 b | % m. 50
     a4 r8 fs' e4 r8 cs | % m. 51
@@ -411,8 +413,8 @@ bass = \relative c {
     R1 | % m. 56
   \normalsize
     r2 r8 b gs e | % m. 57
-    cs' b e ds a gs f' e | % m. 58
-    b8 as g' fs es fs d b | % m. 59
+    cs'[ b] e[ ds] a[ gs] f'[ e] | % m. 58
+    b8[ as] g'[ fs] es[ fs] d[ b] | % m. 59
   \barNumberCheck #60
     cs2 b8 r r4 | % m. 60
   \teeny
@@ -430,9 +432,9 @@ bass = \relative c {
     R1 | % m. 69
   \normalsize
   \barNumberCheck #70
-    r8 b g e c' b e ds | % m. 70
-    a8 gs f' e b as g' fs | % m. 71
-    es8 fs d b cs2 | % m. 72
+    r8 b g e c'[ b] e[ ds] | % m. 70
+    a8[ gs] f'[ e] b[ as] g'[ fs] | % m. 71
+    es8[ fs] d[ b] cs2 | % m. 72
     d4 r8 ds e4 r8 es | % m. 73
     <<
       { s1 | s2 f16\rest b, cs d e cs fs8~ | fs1 | }

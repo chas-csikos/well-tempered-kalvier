@@ -38,7 +38,7 @@ vOne = \relative c'' {
     ef16 g ef d c c' af f d f d c bf bf' g ef | % m. 19
   \barNumberCheck #20
     c ef c bf af af' f d b4 c~ | % m. 20
-    c8 b c16 b c d ef8 d e fs | % m. 21
+    c8 b c16 b c d ef8[ d] e[ fs] | % m. 21
     g16 d c d bf e d e  g8 f r4 | % m. 22
     f16 c bf c af d c d f8 ef r4 | % m. 23
     r16 bf ef c df4 r16 c f d ef4 | % m. 24
@@ -168,7 +168,7 @@ vThree = \relative c' {
     f8 f' r d, g16 d' bf g f d' bf f | % m. 32
     e16 c' g e f c' af f d bf' f d ef bf' g ef | % m. 33
     bf'8 f' d bf a' af r16 af f d | % m. 34
-    bf8 ef bf' b c4~ c16 c af f | % m. 35
+    bf8[ ef] bf'[ b] c4~ c16 c af f | % m. 35
     d8 bf r16 ef c af bf2 | % m. 36
   \voiceTwo
     ef,1_\fermata \bar "|." | % m. 37

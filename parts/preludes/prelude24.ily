@@ -235,7 +235,7 @@ preludeTwentyfour = \score {
       \new Voice \vOne
       \new Voice \vTwo
     >>
-    \new Staff = "Down" \with { \clef bass } <<
+    \new Staff = "Down" \with { \consists "Mark_engraver"  \clef bass } <<
       \new Voice \vThree
     >>
   >>

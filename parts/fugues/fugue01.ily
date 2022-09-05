@@ -38,7 +38,7 @@ vOne = \relative c'' {
     c8. d32 c b8 c d e f8. g32 f | %16
     e8[ a] d, g~g16 a g f e8 a | %17
     d,8 bf'  a g16 f g f g e f g g\prall f32 g | %18
-    a16 cs, d g e8.\prall d16 d8 r r4 | %19
+    a16 cs, d g e8.%{ \prall %} d16 d8 r r4 | %19
   \barNumberCheck #20
     r2 r4 r8 g, | %20
     a8 b c8. d32 c b8 e a, d~ | %21

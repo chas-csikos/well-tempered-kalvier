@@ -201,7 +201,7 @@ vThree = \relative c' {
   \stemDown
     R1*4 | %1-4
   \barNumberCheck #5
-    r4 s8 gs as16 gs fs gs es'8 cs | %5
+    r4 r8 gs as16 gs fs gs es'8 cs | %5
     gs ds16 es fs8 ds' es, cs' ds, bs' | %6
     cs, cs'16 bs cs ds es cs as bs cs as fss gs as fss | %7
     bs,8 bs'16 as bs cs ds bs gs as bs gs es fss gs es | %8

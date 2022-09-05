@@ -73,9 +73,7 @@ left = \relative a {
   ds16 es fs as, b ds cs ds es gs, as cs |
   b16 cs ds fs, gs b css,8 css' as |
   ds16 es fs ds es gs \voiceTwo b8 as gs |
-  fs16 gs as fs gs b
-  \oneVoice
-    css, ds es as, css es |
+  fs16 gs as fs gs b css, ds es as, css es |
   \voiceTwo
   ds4. cs |
   b4. \oneVoice as16 cs  b as gs fss |

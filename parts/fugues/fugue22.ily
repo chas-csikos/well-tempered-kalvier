@@ -522,6 +522,9 @@ bass = \relative c {
     f1 | % m. 74
     bf1 \fermata | % m. 75
   \bar "|."
+  \mark\markup{ \fontsize #-2 \musicglyph #"scripts.ufermata" }
+  \override Staff.RehearsalMark.direction = #DOWN
+  \override Staff.RehearsalMark.rotation = #'(180 0 0)
 }
 
 fugueTwentytwo = \score {
@@ -531,7 +534,7 @@ fugueTwentytwo = \score {
       \new Voice \alto
 
     >>
-    \new Staff = "Down" \with { \clef bass } <<
+    \new Staff = "Down" \with { \consists "Mark_engraver" \clef bass } <<
       \new Voice \mezzo
       \new Voice \tenor
       \new Voice \bass

@@ -36,8 +36,8 @@ vOne = \relative c'' {
     a16 gs a b cs ds e cs ds cs ds e fs gs a fs | % m. 15
     gs16 fs e ds cs b a gs fs gs a fs ds8 gs | % m. 16
   %\voiceOne
-    e8 gs cs b e16 ds cs b a4~ | % m. 17
-    a8 ds, a' gs cs16 b a gs fs4~ | % m. 18
+    e8[ gs] cs[ b] e16 ds cs b a4~ | % m. 17
+    a8[ ds,] a'[ gs] cs16 b a gs fs4~ | % m. 18
     fs8 e16 ds e fs gs e cs gs' fs e ds8 r | % m. 19
   \barNumberCheck #20
     r16 b cs ds e fs gs e cs'4 r16 fs, gs as | % m. 20
@@ -67,7 +67,7 @@ vTwo = \relative c' {
     r4 r8 e fs4 r16 b, cs ds | % m. 1
     e16 ds e fs gs a b gs e ds e fs e ds e fs | % m. 2
     ds16 cs ds e fs gs a fs gs8 b, e4~ | % m. 3
-    e8 ds fs4~ fs8 b, e ds | % m. 4
+    e8 ds fs4~ fs8[ b,] e[ ds] | % m. 4
   \barNumberCheck #5
     cs2 b8 r r4 | % m. 5
     r8 e' gs, b e, fs4 e8 | % m. 6
@@ -77,7 +77,7 @@ vTwo = \relative c' {
   \barNumberCheck #10
     gs8 e a2~ a16 bs cs ds | % m. 10
     gs,4. cs8 fs,2~ | % m. 11
-    fs4 e8 a ds, fs bs, ds | % m. 12
+    fs4 e8 a ds,[ fs] bs,[ ds] | % m. 12
   \staffTwo \voiceOne
     gs, r r4 r as~ | % m. 13
     as4 gs r gs~ | % m. 14
@@ -122,18 +122,18 @@ vThree = \relative c {
     e16 ds e fs e ds e fs ds cs ds e fs gs a fs | % m. 5
     gs16 fs gs a b cs d b cs b cs ds e ds cs b | % m. 6
     a16 gs a b a gs a b gs8 fs e ds | % m. 7
-    cs8 b' as fs b r r4 | % m. 8
+    cs8[ b'] as[ fs] b r r4 | % m. 8
     r2 r4 r8 b | % m. 9
   \barNumberCheck #10
     cs4 r16 fs, gs a b a b cs ds e ds cs | % m. 10
     bs16 gs as bs cs ds e cs a gs a b a gs a b | % m. 11
     gs16 e fs gs a b cs a fs e fs gs fs e fs gs | % m. 12
   \voiceTwo
-    e8 ds cs e as, gs' fss ds | % m. 13
-    gs,8 as b as gs fs' es cs | % m. 14
+    e8[ ds] cs[ e] as,[ gs'] fss[ ds] | % m. 13
+    gs,8[ as] b[ as] gs[ fs'] es[ cs] | % m. 14
   \barNumberCheck #15
-    fs,8 gs a gs fs e' ds cs | % m. 15
-    bs8 gs a e' fs16 e fs8 gs gs, | % m. 16
+    fs,8[ gs] a[ gs] fs[ e'] ds[ cs] | % m. 15
+    bs8[ gs] a[ e'] fs16 e fs8 gs gs, | % m. 16
   %\oneVoice
     cs8 r r4 r2 | % m. 17
     R1 | % m. 18
@@ -141,13 +141,13 @@ vThree = \relative c {
   \barNumberCheck #20
     e16 ds e fs gs a b gs e ds e fs e ds e fs | % m. 20
   \oneVoice
-    ds8 fs b, e~ e8 ds16 cs ds8 b' | % m. 21
-    cs4 r8 gs a gs a e | % m. 22
-    fs8 ds gs fs e fs gs e | % m. 23
-    a8 b cs b a e fs cs | % m. 24
+    ds8[ fs] b,[ e] ~ e8 ds16 cs ds8 b' | % m. 21
+    cs4 r8 gs a[ gs] a[ e] | % m. 22
+    fs8 a gs fs e[ fs] gs[ e] | % m. 23
+    a8[ b] cs[ b] a[ e] fs[ cs] | % m. 24
   \barNumberCheck #25
   \voiceTwo
-    ds8 b e2 ds4~ | % m. 25
+    ds8 b e4 ~ e ds4 ~ | % m. 25
     ds4 cs %26
       fs,8. cs'16 ds8 b | %26 %ossia
     %{ossia
@@ -165,7 +165,7 @@ vThree = \relative c {
       %   } { \voiceTwo fs8. e'16 ds8 b }
       % >> | % m. 26
     ossia%}
-    e8 b cs gs a8.[ e16 fs8 cs] | % m. 27
+    e8[ b] cs[ gs] a8.[ e16] fs8[ cs] | % m. 27
   \oneVoice
   \override Beam.auto-knee-gap = #4
     ds8 b'' cs4 r16 fs, gs a b8 b, | % m. 28

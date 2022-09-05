@@ -245,7 +245,7 @@ vThree = \relative c {
     gs8 es' cs | %94
     gs8 e' cs | %95
     gs8 e' cs | %96
-    gs16 bs ds r8 r16 | %97
+    gs16 bs ds s8 s16 | %97
   \staffOne \voiceTwo
     cs'16 e fss
   \staffTwo \oneVoice

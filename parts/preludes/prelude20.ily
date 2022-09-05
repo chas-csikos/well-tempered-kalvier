@@ -24,8 +24,9 @@ right = \relative a' {
   <b e g>4. ~ g'16 fs g fs g16 fs g f e  d16 cs b |
   \barNumberCheck #10
   <a d f>4. ~ f'16 e f e f16 e f e d c16 b a | % 11
-  <g c e>4. ~ e'16 d e d e16 d c g' f e16 d c | % 12
+  <g c e>4. ~ e'16 d e d e16 d
   \oneVoice
+    c g' f e16 d c | % 12
   b16 e d c b a16 g c b a g f16 e a g f
   e16 d | % 13
   e16 f g8 c g e c8 e g c | % 14

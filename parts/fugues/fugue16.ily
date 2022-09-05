@@ -199,7 +199,7 @@ bass = \relative c {
     r8 d16 ef f8 ef16 d ef8[ e] f[ fs] | % m. 21
     g16 af g f ef8 f16 g af8[ f] d[ b'] | % m. 22
     c4~ c16 d c bf a d, c d ef d c bf | % m. 23
-    a8 c d d, g g'16 a bf8 a16 g | % m. 24
+    a8[ c] d[ d,] g g'16 a bf8 a16 g | % m. 24
     d'8 d,16 ef f8 ef16 d ef,8 ef'16 f g8 f16 ef | % m. 25
     bf'8 bf,16 c d8 c16 bf c,8 c'16 d ef8 d16 c | % m. 26
     g'8 g,16 a bf8 a16 g ef'2 | % m. 27

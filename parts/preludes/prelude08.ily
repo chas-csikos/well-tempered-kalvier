@@ -27,7 +27,7 @@ soprano = \relative c'' {
   c'\arpeggio s1 |
   \oneVoice
   df,4.\prall c16 bf <bf df f>4\arpeggio ~ f'16 gf f ef df c bf af gf8 af16 f |
-  \voiceOne gf4\arpeggio ~ gf8 bf16 df \oneVoice gf4 ~ gf16 f ef df c8.[ ef32 df c16 df ef8] |
+  \voiceOne gf4 ~ gf8 bf16 df \oneVoice gf4 ~ gf16 f ef df c8.[ ef32 df c16 df ef8] |
   f,8. g32 a a8.\prall g32 a \voiceOne bf1 ~ |
   bf1 a2 |
   bf4. c8 df2\arpeggio df\arpeggio |
@@ -36,7 +36,7 @@ soprano = \relative c'' {
   af8 g af bf bf2.\prall af4 |
   af4. s8 \oneVoice f4. gf16 af d,4. ef16 f |
   bf,4. af'8 d,4. ef16 f bf,4. c16 d |
-  ef4. df16 cf df2 \voiceOne df\arpeggio |
+  ef4. df16 cf df2 \voiceOne df |
   df4. cf16 bf cf2 cf\arpeggio |
   \once \set PianoStaff.connectArpeggios = ##f
   cf4.\arpeggio bf16 af \oneVoice f'4. cf8 bf4.\trill cf16 af |
@@ -82,7 +82,7 @@ alto = \relative c' {
   <c' ef gf>2\arpeggio \oneVoice r4 r16 \voiceTwo f ef df c df c df ef df ef c  |
   s1. |
   %13
-  ef,4\arpeggio s s1 |
+  ef,4 s s1 |
   s2 r4. f8 gf4. ef8 |
   c4 ~ c16 df c df ef df c df ef f ef f << \voiceThree { gf4 f8.\trill ef16 } \\ \voiceTwo { c2 }>> |
   df4. ef8 <f bf>2\arpeggio <f bf>\arpeggio |
@@ -91,7 +91,7 @@ alto = \relative c' {
   s2 << g'1 \\  { ef2 df } >> |
   <cf ef>4. cf'8 s1 |
   s1. |
-  s1 <ef,, bf'>2\arpeggio |
+  s1 <ef,, bf'>2 |
   <ef bf'>4. r8 r2 <ef af>\arpeggio |
   <f af>4.\arpeggio s8 s1 |
   ef2\arpeggio s1 |

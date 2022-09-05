@@ -292,7 +292,7 @@ vThree = \relative c {
     \voiceTwo ds,16 ds' cs b as4 ~ as8 fs gs as | %39
   \barNumberCheck #40
     \oneVoice b as gs4 ds' \once \tieDown as ~ | %40
-    as8 bs css4 ds8 b fs gs | %41
+    as8 bs css4 ds8[ b] fs[ gs] | %41
     \voiceTwo as4 ds, gs8 as b4 | %42
     \oneVoice as2 r %{ \pageBreak %} | %43
     r as,4 ds, ~ | %44

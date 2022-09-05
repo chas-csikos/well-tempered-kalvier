@@ -37,7 +37,7 @@ vOne = \relative c''' {
     bf f, g af bf c d e f ef d ef f g a b | %14
   \barNumberCheck #15
     \voiceOne c8 b16 a g f ef d c8 ef d c | %15
-    bf a bf c fs, g a fs | %16
+    bf a bf c fs,! g a fs | %16
     g d'16 c d8 r r e16 d e8 r | %17
     r fs16 e fs8 r r g,16 f g8 r | %18
     r a16 g a8 r r b16 a b8 r | %19
@@ -99,7 +99,7 @@ vTwo = \relative c'' {
     b, c d b b c r c | %28
     f16 d ef c ~ c8 b c4 r8 e | %29
   \barNumberCheck #30
-    f4 r8 f f ef16 d ef8 f | %30
+    f4 r8 f f ef16 d ef8 <f af> | %30
     <b, d>8 r <b d> r <g c>2 | %31
   \bar "|."
 }

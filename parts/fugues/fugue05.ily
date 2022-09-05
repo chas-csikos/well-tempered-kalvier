@@ -171,8 +171,10 @@ bass = \relative c {
     b4 g'16 fs g e e d e cs cs b cs a | % m. 19
   \barNumberCheck #20
     a4 r e'32 fs g a g fs g e a4 | % m. 20
-    d,32 e fs g fs e fs d g8 r r2 | % m. 21
-    <g g,>4 fs32 g a g fs e d cs \oneVoice b cs d cs b a b g a8. a16 | % m. 22
+    d,32 e fs g fs e fs d g8 
+  \oneVoice 
+      r r2 | % m. 21
+    <g g,>4 fs32 g a g fs e d cs b cs d cs b a b g a8. a16 | % m. 22
     d,8. \tuplet 3/2 { d'32 e fs } g4 cs,32 d e fs e d e cs fs4 | % m. 23
     b,32 cs d e d cs d b e fs g a g fs g e a b cs d cs b cs a \clef treble d e fs g fs e fs d | % m. 24
   \barNumberCheck #25
