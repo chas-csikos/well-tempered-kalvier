@@ -10,7 +10,7 @@
 tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup text))
 
 \paper { first-page-number = #0 }
-\pointAndClickOff
+% \pointAndClickOff
 
 \book {
   \bookpart {

@@ -84,7 +84,7 @@ vTwo = \relative c' {
     e4 d~ d16 a' g f e g f a | %21
     g4~g16 a bf8 c4 d8 g, | %22
     g4. f8~f e d4 | %23
-    e8 a4 g8~g f g a | %24
+    e8 a4 g8~g[ f g a] | %24
     bf8. c32 bf a8 d g, c~ c16 d c bf | %25
     a16 bf a g f g f e d4~d8. g16 | %26
   \barNumberCheck #27

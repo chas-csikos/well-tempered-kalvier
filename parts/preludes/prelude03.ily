@@ -10,7 +10,7 @@ global = {
 staffOne = \change Staff = "Up"
 staffTwo = \change Staff = "Down"
 
-%soparno / right hand
+%right hand
 vOne = \relative c'' {
   \global
   \barNumberCheck #1
@@ -139,7 +139,7 @@ vTwo = \relative c' {
     <cs gs'>4. | %104
 }
 
-%tenor / left hand
+%left hand
 vThree = \relative c {
   \global
   \barNumberCheck #1
@@ -218,8 +218,8 @@ vThree = \relative c {
     gs8 es' cs | %70
     gs8 e' cs | %71
     gs8 e' cs | %72
-    fs,8 ds' bs | %73
-    gs8 ds' bs | %74
+    gs8 ds' bs | %73
+    fs8 ds' bs | %74
     es,8 es' cs | %75
     gs8 es ds | %76
     css8 es as | %77

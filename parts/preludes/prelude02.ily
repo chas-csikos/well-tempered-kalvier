@@ -50,7 +50,7 @@ soprano = \relative c'' {
   \barNumberCheck #30
     \once \override Beam.auto-knee-gap = #2
     d g' f g af f ef f d f ef f g ef d ef | %30
-    \stemUp c ef d ef g d c d b d c d ef c b c | %31
+    \stemUp c ef d ef f d c d b d c d ef c b c | %31
     g c b c af f' ef f g, ef' d ef f, d' c d | %32
     ef, c' bf %{ b? %} c af f ef f g ef d ef f d c d | %33
   \tempo "Adagio"

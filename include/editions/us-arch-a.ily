@@ -247,10 +247,10 @@
 
 %fugue three
   % Was working but is now rendering to 7 pages forcing breaks + no breaks
-  % \editionModList archA    fugue.three.Score   \noBreak #'(24 26 27 29 30)
-  % \editionModList archA    fugue.three.Score   \break #'(4 7 10 13 16 19 22 25 28 31 33 35 37)
-  \editionMod archA 24 0/1 fugue.three.Score   \noPageBreak
   \editionMod archA 35 0/1 fugue.three.Score   \allowPageTurn
+  \editionModList archA    fugue.three.Score   \pageBreak #'(18 35 45)
+  \editionModList archA    fugue.three.Score   \noBreak #'(22 23)
+  \editionModList archA    fugue.three.Score   \break #'(4 7 10 13 16 18 21 24)
   \editionMod archA 4  0/4 fugue.three.Voice.A \shape #'((0 . 0.5) (0 . 0.5) (0.75 . 0.5) (0.75 . 0.5)) Tie
   \editionMod archA 5  3/4 fugue.three.Voice.A \shape #'((0 . 0.5) (0 . 0.5) (0.75 . 0.5) (0.75 . 0.5)) Tie
   \editionMod archA 7  3/4 fugue.three.Voice.A \shape #'((0 . 0) (0 . 0.25) (0 . 0.25) (0 . 0)) Tie
@@ -258,6 +258,7 @@
   \editionMod archA 9  1/4 fugue.three.Voice.A \shape #'((0 . 0) (0 . 0.5) (0 . 0.5) (0 . 0)) Tie
   \editionMod archA 9  2/4 fugue.three.Voice.C \shape #'((0 . 0) (0 . -0.25) (0 . -0.25) (0 . 0)) Tie
   \editionMod archA 15 0/4 fugue.three.Voice.A \shape #'((-1 . -0.25) (-1 . -0.25) (0.75 . -0.25) (0.75 . -0.25)) Tie
+  \editionMod archA 17 1/2 fugue.three.Voice.C \shape #'((-0.75 . -1) (-0.75 . -1) (0 . -1) (0 . -1)) Tie
   \editionMod archA 18 1/4 fugue.three.Voice.A \shape #'((0 . 0) (0 . -0.125) (0 . -0.125) (0 . 0)) Tie
   \editionMod archA 18 2/4 fugue.three.Voice.C \shape #'((-0.75 . -0.5) (-0.75 . -0.5) (0 . -0.5) (0 . -0.5)) Tie
   \editionMod archA 24 1/4 fugue.three.Voice.C \shape #'((0 . 0.5) (0 . 0.5) (0.75 . 0.5) (0.75 . 0.5)) Tie

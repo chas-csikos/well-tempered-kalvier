@@ -43,7 +43,7 @@ vOne = \relative c'' {
   \barNumberCheck #15
     \tieDown fs4 ~ fs16 es ds fs es ds cs es ds cs ds bs | %15
     \voiceOne cs16 es fs es \tieUp cs'4 ~ cs16bs cs as  as'4 ~ | %16
-    as16 ds,, es ds bs'4 ~ bs16 cs as bs gs'4 ~ | %17
+    as16 ds,, es ds bs'4 ~ bs16 as bs gs gs'4 ~ | %17
     gs16 cs,, ds cs as'4 ~ as16 gs as fss fss'4 ~ | %18
     fss16 dss es cs as2 gs4 ~ | %19
   \barNumberCheck #20
