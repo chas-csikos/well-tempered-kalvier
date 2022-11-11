@@ -26,7 +26,7 @@ soprano = \relative c'' {
     b8 ds16 css ds4 es8 r css r | % m. 10
     ds8 es fs4~ fs8 e16 fs gs8 fss16 gs | % m. 11
     as8 gs16 as b8 gs as r fss r | % m. 12
-    gs8 \once \override Accidental #'restore-first = ##t fs16 e ds8 e fs r fs r | % m. 13
+    gs8 \once \override Accidental #'restore-first = ##t fs16 e ds8 e fs r ds r | % m. 13
     e8 ds16 cs bs8 cs ds r bs r | % m. 14
     cs4 r r8 cs4 ds8 | % m. 15
     e4 ds cs2~ | % m. 16

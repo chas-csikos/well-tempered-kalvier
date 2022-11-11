@@ -10,7 +10,7 @@
 tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup text))
 
 \paper { first-page-number = #0 }
-% \pointAndClickOff
+%\pointAndClickOff
 
 \book {
   \bookpart {
@@ -72,7 +72,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \tocAct \markup {
       \abs-fontsize #9.5 "C Major ✻"
       \bold\italic "Præludium und Fuga 1"
-      \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 846" 
+      \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 846"
     }
     \tocItem \markup { "Prelude 1" }
     \preludeOne
@@ -86,7 +86,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     }
     \paper {
       page-count       = #2
-      systems-per-page = #6
+      systems-per-page = #5
     }
     \tocItem \markup { "Fugue 1 â 4" }
     \fugueOne
@@ -148,7 +148,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \paper {
       page-breaking        = #ly:page-turn-breaking
       page-count           = #4
-      max-systems-per-page = #6      
+      max-systems-per-page = #6
     }
     \tocItem \markup { "Fugue 3 â 3" }
     \fugueThree
@@ -163,13 +163,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     }
     \paper {
       page-count       = #2
-      min-systems-per-page = #6
-      system-system-spacing = #'(
-          (basic-distance   . 8)
-          (minimum-distance . 4)
-          (padding          . 1)
-          (stretchability   . 8)
-        )
+      systems-per-page = #6
     }
     \tocAct \markup { \abs-fontsize #9.5 { "C♯ Minor ✻" } \bold\italic "Præludium und Fuga 4"  \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 849" }
     \tocItem \markup { "Prelude 4"  }
@@ -183,10 +177,12 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
       opus        = "BWV 849"
     }
     \paper {
-      page-breaking = #ly:page-turn-breaking
+%       page-breaking = #ly:page-turn-breaking
+%       max-systems-per-page = #7
+%       min-systems-per-page = #5
       page-count    = #4
-      max-systems-per-page = #7
-      min-systems-per-page = #5
+      systems-per-page = #6
+
     }
     \tocItem \markup { "Fugue 4 â 5" }
     \fugueFour
@@ -203,7 +199,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
       page-count       = #2
       systems-per-page = #6
     }
-        \tocAct \markup { \abs-fontsize #9.5 {"D Major ✻"} \bold\italic "Præludium und Fuga 5" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 850" }
+    \tocAct \markup { \abs-fontsize #9.5 {"D Major ✻"} \bold\italic "Præludium und Fuga 5" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 850" }
     \tocItem \markup { "Prelude 5" }
     \preludeFive
   }
@@ -233,7 +229,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
       page-count = #2
       system-count = #13
     }
-        \tocAct \markup { \abs-fontsize #9.5 {"D Minor ✻"} \bold\italic "Præludium und Fuga 6"   \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 851" }
+    \tocAct \markup { \abs-fontsize #9.5 {"D Minor ✻"} \bold\italic "Præludium und Fuga 6"   \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 851" }
     \tocItem \markup { "Prelude 6" }
     \preludeSix
   }
@@ -518,7 +514,6 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
      \paper {
        page-count           = #2
        max-systems-per-page = #6
-       ragged-last-bottom   = ##t
      }
      \tocAct \markup { \abs-fontsize #9.5 {"G Major ✻"} \bold\italic "Præludium und Fuga 15" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 860" }
      \tocItem \markup { "Prelude 15" }
@@ -610,7 +605,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     }
     \paper {
       page-count       = #2
-      systems-per-page = #6
+      min-systems-per-page = #5
     }
     \tocAct \markup { \abs-fontsize #9.5 {"G♯ Minor ✻"} \bold\italic "Præludium und Fuga 18" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 863" }
     \tocItem \markup { "Prelude 18" }
@@ -624,7 +619,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
       opus        = "BWV 863"
     }
     \paper {
-      page-count       = #2
+      page-count   = #2
       systems-per-page = #6
     }
     \tocItem \markup { "Fugue 18 â 4" }

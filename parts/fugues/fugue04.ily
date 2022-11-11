@@ -27,6 +27,11 @@ vOne = \relative c'' {
     \normalsize
     \once\small r2 cs | %14
   \barNumberCheck #15
+  \once \override NoteHead.whiteout = #1
+  \once \override Accidental.whiteout = #2
+  \once \override Staff.NoteHead.layer = #3
+  \once \override Staff.Accidental.layer = #3
+  \once \override Staff.Stem.layer = #4
     bs2  e | %15
     ds1 | %16
     \once \shiftOn \once\override NoteColumn.force-hshift = #1.4 cs2. ds4 | %17
@@ -135,6 +140,11 @@ vOne = \relative c'' {
     fs4 <e cs>8 <ds bs> e4 ds8 cs | %100
     ds4 bs cs2~ | %101
     cs1 | %102
+      \once \override NoteHead.whiteout = #1
+      \once \override Accidental.whiteout = #2
+      \once \override Staff.NoteHead.layer = #3
+      \once \override Staff.Accidental.layer = #3
+      \once \override Staff.Stem.layer = #4
     bs2 b | %103
     as2 a | %104
   \barNumberCheck #105
@@ -294,8 +304,9 @@ vTwo = \relative c'' {
     \once\override NoteColumn.force-hshift = #0.6 gs2 fs~ | %102
     %fs4 es8 fs gs4 gs | %103
     %gs4 fs8 e fs4 fs | %104
-    fs4 b\rest \once\small \once\override NoteColumn.X-offset = #1 c,2\rest | %103
-    b4\rest cs fs fs | %104
+    %fs4 b\rest \once\small \once\override NoteColumn.X-offset = #1 c,2\rest | %103
+    fs4 b\rest s2 | %103
+    b,4\rest cs fs fs | %104
   \barNumberCheck #105
     \once\override NoteColumn.force-hshift = #1.4
     fs4 e8 ds e2~ | %105
@@ -398,7 +409,7 @@ vThree = \relative c' {
   \barNumberCheck #60
   \voiceOne
     ds2 r | %60
-  \override MultiMeasureRest.staff-position = #6
+  \override MultiMeasureRest.staff-position = #8
     \tiny
     R1*3 | %61
     \normalsize
@@ -611,6 +622,7 @@ vFour = \relative c' {
     ds8 cs ds e ds cs bs ds | %93
     cs4 r \once\teeny r2 | %94
   \barNumberCheck #95
+    \once\override MultiMeasureRest.X-offset = #1
     \once\teeny R1 | %95
   \voiceFour
     d4\rest fs b b | %96
@@ -798,7 +810,8 @@ fugueFour = \score {
     \context {
       \Score
       \editionID ##f fugue.four
-      % \override NonMusicalPaperColumn #'line-break-permission = ##t
+%       \override NonMusicalPaperColumn #'line-break-permission = ##f
+%       \override NonMusicalPaperColumn #'page-break-permission = ##f
       % \consists #(custom-line-breaks-engraver '(7 7 7 7 7 4 4  5 4 4 4 5 4 4))
     }
   }

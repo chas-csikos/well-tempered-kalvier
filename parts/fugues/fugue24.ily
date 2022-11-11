@@ -198,7 +198,7 @@ alto = \relative c' {
     e8 d16 cs b cs d8~ d cs16 b as b cs8~ | % m. 66
     cs4 b8 a g16 a b8~ b8 a16 g | % m. 67
     fs16 g a8~ a g16 fs e fs g8~ g fs16 e | % m. 68
-    d4 b'~ b8 as d cs | % m. 69
+    d4 b'~ b8 as! d cs | % m. 69
   \barNumberCheck #70
     fs8 r r4 r r8 b,~ | % m. 70
     b16 cs b a gs4 r16 g fs8~ fs16 e d e | % m. 71

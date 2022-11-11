@@ -45,11 +45,12 @@ vOne = \relative bf' {
 vTwo = \relative f' {
   \global
   \voiceTwo
-    r8 f8 r
-  \showStaffSwitch
-  \staffTwo\voiceOne
-      <f df> <gf ef>4 r8 <c, ef gf> |
-    f4 s8 <f df>
+    r8 \once\stemUp\once\shiftOn f8 \once\teeny r 
+  %\showStaffSwitch
+  %\staffTwo\voiceOne
+      %<f df> <gf ef>4 r8 <c, ef gf> |
+      f gf4 \once\teeny r8 gf |
+    f4 s8 f
   \staffOne\voiceTwo
       a4 r8 a |
   \hideStaffSwitch
@@ -65,7 +66,7 @@ vTwo = \relative f' {
   <g e>8 <f c> r <f c> <f df> <df bf> r df |
   c8 f16 e f8 f f e16 d e8 e |
   e8 f16 ef df8 df df8 bf'16 a bf4 |
-  << { c4 } \\  { c8 f,16 g } >> af8 af af8 g16 af bf8 bf |
+  << { c4 d8\rest c df bf d\rest c } \\ { c8 f,16 g af8 af af8 g16 af bf8 bf } >> |
   <bf c>8 <af c>16 <g bf>  <af c>4 r8 <af cf>16 <gf bf> <f af>4 |
   r8 <ef gf>16 <f af> <gf bf>4 r8 <c, ef>16 <df f> <ef gf>4 |
   r8 <f af>16 <ef gf> <df f>8 <df f> <df gf> <df gf> bf'[ bf] |
@@ -83,8 +84,10 @@ vTwo = \relative f' {
 vThree = \relative c' {
   \global
   \voiceOne
-  df4 r8 s8 s4 s8 s |
-  df4 r8 s c4 r8 c |
+  df4 r8 
+    %s8 s4 s8 s |
+    df8 ef4 r8 <c ef> |
+  df4 r8 df c4 r8 c |
   \staffOne \voiceFour \once \override NoteColumn.force-hshift = #0.3 bf'4 s8 s g gf s s |
   \staffTwo \voiceOne f4 r8 f gf2 ~ |
   gf8 \staffOne \voiceTwo ef'16 df c4 ~  c8 c16 bf a4 ~ |

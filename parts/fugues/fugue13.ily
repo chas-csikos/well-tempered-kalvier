@@ -148,9 +148,7 @@ bass = \relative c {
 
 
 fugueThirteen = \score {
-  \new PianoStaff \with {
-    edition-id = fugue.thirteen
-  } <<
+  \new PianoStaff \with {} <<
     \new Staff = "Up" \with {  } <<
       \new Voice \soprano
       \new Voice \mezzo
@@ -159,6 +157,11 @@ fugueThirteen = \score {
       \new Voice \bass
     >>
   >>
-  \layout{}
+  \layout{
+    \context {
+      \Score
+      \editionID ##f fugue.thirteen
+    }
+  }
 }
 %\fugueThirteen

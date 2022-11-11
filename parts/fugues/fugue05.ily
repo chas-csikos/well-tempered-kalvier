@@ -4,8 +4,8 @@
 global = {
   \key d \major
   \time 4/4
-  \omit TupletNumber
-  \omit TupletBracket
+%   \omit TupletNumber
+%   \omit TupletBracket
 }
 
 staffOne = \change Staff = "Up"
@@ -69,7 +69,7 @@ alto = \relative c' {
     a4 cs d d | % m. 6
     cs8. \tuplet 3/2 { e32 d cs} s8. s16 b4 e, | % m. 7
     a4 \voiceTwo b~ b as | % m. 8
-    b4 \voiceThree d\rest s8. s16 s8. s16 | % m. 9
+    b4 \voiceThree b\rest s8. s16 s8. s16 | % m. 9
   \barNumberCheck #10
     s4 b\rest s8. s16 s8. s16 | % m. 10
     s4 b,\rest g'2\rest | % m. 11
@@ -111,16 +111,16 @@ tenor = \relative c' {
     a4 \voiceTwo \staffOne fs'32 g a b a g a fs b4 e,32 fs g a g fs g e | % m. 6
     a4 a8. g16 fs8. g16 a4 | % m. 7
     d,4 \once\showStaffSwitch \staffTwo \voiceOne d cs2 | % m. 8
-    b4 \staffOne \voiceTwo d\rest <b' d>8. <gs b>16 <gs b>8. <e a>16 | % m. 9
+    b4 \staffOne \voiceTwo s <b' d>8. <gs b>16 <gs b>8. <e a>16 | % m. 9
   \barNumberCheck #10
-    <e a>4 b\rest <a' c>8. <fs a>16 <fs a>8. <d g>16 | % m. 10
-    <d g>4 c,\rest r2 | % m. 11
+    <e a>4 s <a c>8. <fs a>16 <fs a>8. <d g>16 | % m. 10
+    <d g>4 s s2 | % m. 11
   \staffTwo \voiceOne
   \override MultiMeasureRest.staff-position = #6
-    R1 | % m. 12
+    \once\teeny R1 | % m. 12
     \once\teeny R1 | % m. 13
   \revert MultiMeasureRest.staff-position
-    r4 g'32 a b c b a b g e'8. e16 d8. c16 | % m. 14
+    r4 g,32 a b c b a b g e'8. e16 d8. c16 | % m. 14
   \barNumberCheck #15
     b4 \once\showStaffSwitch\staffOne\voiceTwo g' fs2~ | % m. 15
     fs4 e8. \staffTwo\voiceOne fs,16 g8. a16 b8. a16 | % m. 16
@@ -134,7 +134,7 @@ tenor = \relative c' {
     s4 s s4 s | % m. 23
     s4 s s2 | % m. 24
   \barNumberCheck #25
-    b8.\rest s16 s8. s16 s8. s16 s8. s16 | % m. 25 %chorded
+    s8. s16 s8. s16 s8. s16 s8. s16 | % m. 25 %chorded
     \voiceTwo d8. g16 g8. a16 \staffTwo \voiceOne a,4 g | % m. 26
     <fs a>1 \bar "|." | % m. 27
 }
@@ -143,7 +143,7 @@ bass = \relative c {
   \global
   \voiceTwo
   \barNumberCheck #1
-    r4 d32 e fs g fs e fs d b'8. b16 a8. g16 | % m. 1
+    d4\rest d32 e fs g fs e fs d b'8. b16 a8. g16 | % m. 1
     fs8. g16 fs8. e16 d4 e | % m. 2
     a,8. \tuplet 3/2 { e'32 fs g } a2 g4~ | % m. 3
     g8. fs32 e fs8. d16 g8. e16 a8. a,16 | % m. 4

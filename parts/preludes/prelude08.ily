@@ -12,9 +12,9 @@ staffTwo = \change Staff = "Down"
 soprano = \relative c'' {
   \global
   \voiceOne
-  bf2 r4. bf8 ef4. gf8 |
-  cf,2 r4. ef8 af4. cf8 |
-  d,2 r4. f8 af,4\prall ~ af16 gf af bf |
+  bf2 r4 r8 bf8 ef4. gf8 |
+  cf,2 r4 r8 ef8 af4. cf8 |
+  d,2 r4 r8 f8 af,4\prall ~ af16 gf af bf |
   gf4.\prall f16 ef \once\stemDown gf'2 gf2\arpeggio |
   %5
   gf2\arpeggio s1 |
@@ -76,15 +76,15 @@ alto = \relative c' {
   <gf bf df>2\arpeggio \oneVoice r4 r16 gf' ff ef ff4. df8 \voiceTwo |
   <ef, gf cf>2\arpeggio <gf cf>\arpeggio <gf cf>\arpeggio |
   <bf ef>\arpeggio \oneVoice r4 r16 ef df cf df4. bf8 \voiceTwo
-  cf4.^\prall bf16 af r4. cf8 af4. f8
+  cf4.^\prall bf16 af r4 r8 cf8 af4. f8
   d2 <d f bf>\arpeggio <d f bf>\arpeggio |
-  <ef gf bf>\arpeggio r4. gf8 ef4. c8 |
+  <ef gf bf>\arpeggio r4 r8 gf8 ef4. c8 |
   <c' ef gf>2\arpeggio \oneVoice r4 r16 \voiceTwo f ef df c df c df ef df ef c  |
   s1. |
   %13
   ef,4 s s1 |
-  s2 r4. f8 gf4. ef8 |
-  c4 ~ c16 df c df ef df c df ef f ef f << \voiceThree { gf4 f8.\trill ef16 } \\ \voiceTwo { c2 }>> |
+  s2 r4 r8 f8 gf4. ef8 |
+  c4 ~ c16 df c df ef df c df ef f ef f gf4 f8.\trill ef16 |
   df4. ef8 <f bf>2\arpeggio <f bf>\arpeggio |
   <ff bf>4. s8 <bf df>2 ~ <bf df>4. s8 |
   <bf df>2 ~ <bf df>4. s8 <cf ef>2 |
@@ -105,10 +105,10 @@ alto = \relative c' {
   \repeat unfold 3 <cf f> |
   \repeat unfold 3 <d f> |
   <d f af>2\arpeggio s1 |
-  r4. gf8 ef2 d2 |
+  r4 r8 gf8 ef2 d2 |
   s1. |
   s1. |
-  r4. cf16 bf cf4. af8 s2 |
+  r4 r8 cf16 bf cf4. af8 s2 |
   <bf g>1.
 }
 
@@ -116,11 +116,11 @@ tenor = \relative c' {
   \global
   \oneVoice
   s1.*3 |
-  s2
-  r4. bf8 gf4. ef8 |
+  \once\teeny r2
+  r4 r8 bf8 gf4. ef8 |
   \voiceOne
   s2 <df gf bf>\arpeggio <df gf bf>\arpeggio |
-  <ef gf cf>2\arpeggio \oneVoice r4. \voiceOne gf8 ef4. cf8 |
+  <ef gf cf>2\arpeggio \oneVoice r4 r8 \voiceOne gf8 ef4. cf8 |
   s2 <bf ef g>\arpeggio <bf ef g>\arpeggio |
   <cf ef af>2\arpeggio s1 |
   s1.*2 |
@@ -128,7 +128,7 @@ tenor = \relative c' {
   <df f>2\arpeggio <df f>\arpeggio <df f>\arpeggio |
   <bf df>\arpeggio <bf c>\arpeggio <bf c>\arpeggio |
   <a c>\arpeggio <f bf>\arpeggio bf |
-  f2 f f  |
+  f2 f <f c'>  |
   <f bf>2 s s |
   s1.*7 |
   af2\arpeggio bf\arpeggio bf\arpeggio |
@@ -141,7 +141,7 @@ tenor = \relative c' {
   cf2 s1 |
   s1.*3
   s2 r2 r2 |
-  r4. ef,8 <ef gf>2 <f af>  |
+  r4 r8 ef,8 <ef gf>2 <f af>  |
   \repeat unfold 3 <g bf df>\arpeggio |
   \repeat unfold 3 <af> |
   f2 f2 f2 |
@@ -161,15 +161,15 @@ bass = \relative c {
   ef,2\arpeggio ef\arpeggio ef\arpeggio |
   ef2\arpeggio df\arpeggio ef |
   f2 f, f |
-  bf2 \oneVoice r4. bf8 df4. f8 |
+  bf2 \oneVoice r4 r8 bf8 df4. f8 |
   g,2 ~ g4 ~ g16 bf af g df'2 ~ |
   df4. cf16 bf ff'8 ef ff df cf16 bf af bf cf af bf cf |
   ff,4 ~ ff16 ff' ef df ef4. df8 ef4. ef,8 |
-  af2 r4. cf'8 f,4. gf16 af |
+  af2 r4 r8 cf'8 f,4. gf16 af |
   %20
   d,4. ef16 f bf,4. af'8 d,4. ef16 f |
   gf,2 g4. bf'8 g4. ef8 |
-  af,2 r4. cf'8 af4. f8 |
+  af,2 r4 r8 cf'8 af4. f8 |
   \voiceTwo
   <d f>2\arpeggio <d f>\arpeggio <d f>\arpeggio |
   \repeat unfold 3 <ef gf>\arpeggio |
@@ -186,7 +186,7 @@ bass = \relative c {
   cf2 ~ cf4 ~ cf16 df cf bf cf bf af bf cf af bf cf |
   d,2 \voiceTwo r2 r2 |
   %35
-  r4. ef8 bf'2 bf |
+  r4 r8 ef8 bf'2 bf |
   ef2\arpeggio ef2\arpeggio ef2\arpeggio |
   ef2 ef ef |
   ef2 ef ef |

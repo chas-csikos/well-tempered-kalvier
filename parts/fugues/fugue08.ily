@@ -80,7 +80,7 @@ vOne = \relative c'' {
     ds4. cs8 ds4. es8 | %48
     fs4. es8 ds4 as' | %49
   \barNumberCheck #50
-  \voiceOne 
+  \voiceOne
     ds,4. ds8 css ds es css | %50
     ds es fs gs as as, ds es | %51
     css4 r as ds ~ | %52
@@ -205,7 +205,7 @@ vTwo = \relative c' {
     \st as, \so gs' fs es ds4 ds'8 cs | %58
     b as gs b as ds4 cs8 ~ | %59
   \barNumberCheck #60
-    cs b4 as8 ~ as gs4 fs8 ~ | %60
+    cs b4 as 8 ~ as %{ as4%} gs4 fs8 ~ | %60
     fs es4 ds8 css es as4 ~ | %61
     as8 b as gs fs gs as4 | %62
     ds, gs ~ gs8 fss es e | %63
@@ -300,7 +300,7 @@ vThree = \relative c {
     ds8 css ds es fs es ds4 | %45
     as' ds, ~ ds8 es fss4 | %46
     gs as \voiceTwo b8 cs b as | %47
-    gs[ as] b es16 cs gs'4 b,8 cs | %48
+    gs[ as b es16 cs] gs'4 b,8 cs | %48
     ds css ds es fs gs es fss | %49
   \barNumberCheck #50
     gs as gs fs \oneVoice es ds css b' | %50
@@ -365,7 +365,7 @@ fugueEight = \score {
       \new Voice \vThree %bass
     >>
   >>
-  \layout {  
+  \layout {
     \context {
       \Score
       \editionID ##f fugue.eight

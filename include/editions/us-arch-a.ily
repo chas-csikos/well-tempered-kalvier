@@ -1,7 +1,7 @@
 \paper {
   print-first-page-number = ##t
-  min-systems-per-page = #5 %maybe not needed;
-  max-systems-per-page = #7 %but better off safe?
+%   min-systems-per-page = #5 %maybe not needed;
+%   max-systems-per-page = #7 %but better off safe?
 
   ragged-last-bottom = ##f
   ragged-bottom = ##f
@@ -119,10 +119,10 @@
       }
     }
     }
-    
+
     % evenFooterMarkup =
     %   \markup{ "even" }
-    
+
     oddHeaderMarkup =
     \markup{
       \fill-line {
@@ -160,7 +160,7 @@
 
     % oddFooterMarkup =
     %   \markup{ "odd" }
-  
+
 }
 
 \include "oll-core/package.ily"
@@ -202,10 +202,10 @@
   \editionMod archA 34 4/16 prelude.one.Voice.B \shape #'((0 . 0.5)(0 . 0.25)(0 . 0.25)(0 . 0.5)) Tie
 
 %fugue one
-  \editionModList archA fugue.one.Score \break #'(4 6 8 10 12)
-  \editionModList archA fugue.one.Score \break #'(17 19 21 23 25)
+  \editionModList archA fugue.one.Score \break #'(4 7 9 12)
+  %\editionModList archA fugue.one.Score \break #'(17 19 21 23 25)
   \editionMod archA 14 1/2 fugue.one.Staff \bar""
-  \editionMod archA 14 1/2 fugue.one.Score \break
+  \editionMod archA 14 1/2 fugue.one.Score \pageBreak
   % \editionMod archA 15 0/2 fugue.one.Voice.A \override Score.BarNumber.break-visibility = ##(#f #t #t)
   % \editionMod archA 15 1/2 fugue.one.Voice.A \revert   Score.BarNumber.break-visibility
   \editionMod archA 5  1/4 fugue.one.Voice.B \shape #'((-0.5 . -0.25)(-0.5 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
@@ -221,8 +221,9 @@
   \editionMod archA 26 0/4 fugue.one.Voice.D \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
 
 %prelude two
-  \editionMod archA 34 19/64 prelude.two.Voice.A \once\omit Accidental 
-  \editionMod archA 34 1/2 prelude.two.Voice.C \once\omit Accidental 
+  \editionMod archA 33 2/16 prelude.two.Voice.A \once\omit Accidental
+  %\editionMod archA 34 19/64 prelude.two.Voice.A \once\omit Accidental
+  \editionMod archA 34 1/2 prelude.two.Voice.C \once\omit Accidental
   \editionMod archA 37 5/8 prelude.two.Voice.C \shape #'( (0 . -0.4) (0 . -0.75) (0 . -0.75) (0 . -0.4)) Tie
   \editionMod archA 37 3/4 prelude.two.Voice.C \shape #'( (0 . 0) (0 . -0.25) (0 . -0.25) (0 . 0)) Tie
   \editionMod archA 37 2/4 prelude.two.Voice.D \shape #'( (0 . 0) (-1.5 . -0.75) (1.5 . -0.75) (0 . 0)) Tie
@@ -258,7 +259,7 @@
   \editionMod archA 9  1/4 fugue.three.Voice.A \shape #'((0 . 0) (0 . 0.5) (0 . 0.5) (0 . 0)) Tie
   \editionMod archA 9  2/4 fugue.three.Voice.C \shape #'((0 . 0) (0 . -0.25) (0 . -0.25) (0 . 0)) Tie
   \editionMod archA 15 0/4 fugue.three.Voice.A \shape #'((-1 . -0.25) (-1 . -0.25) (0.75 . -0.25) (0.75 . -0.25)) Tie
-  \editionMod archA 17 1/2 fugue.three.Voice.C \shape #'((-0.75 . -1) (-0.75 . -1) (0 . -1) (0 . -1)) Tie
+%   \editionMod archA 17 1/2 fugue.three.Voice.C \shape #'((-0.75 . -1) (-0.75 . -1) (0 . -1) (0 . -1)) Tie
   \editionMod archA 18 1/4 fugue.three.Voice.A \shape #'((0 . 0) (0 . -0.125) (0 . -0.125) (0 . 0)) Tie
   \editionMod archA 18 2/4 fugue.three.Voice.C \shape #'((-0.75 . -0.5) (-0.75 . -0.5) (0 . -0.5) (0 . -0.5)) Tie
   \editionMod archA 24 1/4 fugue.three.Voice.C \shape #'((0 . 0.5) (0 . 0.5) (0.75 . 0.5) (0.75 . 0.5)) Tie
@@ -270,6 +271,7 @@
   \editionMod archA 50 1/4 fugue.three.Voice.A \shape #'((0 . 0.5) (0 . 0.75) (0 . 0.75) (0 . 0.5)) Tie
 
 %prelude four
+  %\editionMod archA 1 0/1 prelude.four.Score
   % \editionMod archA 1 0/4 prelude.four.Voice.E \shape  #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie %see file, edition engraver fails on first beat
   \editionMod archA 1 3/4 prelude.four.Voice.A \once \offset positions #'(-0.75 . 0.25) Staff.Arpeggio
   \editionMod archA 2 5/4 prelude.four.Voice.B \shape  #'((-0.75 . -0.25)(-0.75 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
@@ -288,18 +290,22 @@
   \editionMod archA 14 0/2 prelude.four.Voice.A \once \offset positions #'(-0.75 . 0.25) Staff.Arpeggio
   \editionMod archA 14 1/2 prelude.four.Voice.A \shape #'((1 . 0)(1 . 0)(0 . 0)(0 . 0)) Tie
   \editionMod archA 15 2/4 prelude.four.Voice.A \shape #'((-1 . 0.5)(-1 . 0.5)(1 . 0.5)(1 . 0.5)) Tie
-  \editionMod archA 15 5/8 prelude.four.Voice.E \shape #'((-0.75 . -0.25)(-0.75 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
+  \editionMod archA 15 5/8 prelude.four.Voice.E \shape #'((-0.5 . -0.25)(-0.5 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
+  \editionMod archA 16 5/8 prelude.four.Voice.B \shape #'((0 . -0.25)(0 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
+  \editionMod archA 16 3/4 prelude.four.Voice.B \shape #'((1 . 0)( . 0)(0 . 0)(0 . 0)) Tie
   \editionMod archA 18 0/4 prelude.four.Voice.E \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
   \editionMod archA 18 2/4 prelude.four.Voice.C \shape #'((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) Tie
   %\editionMod archA 18 5/8 prelude.four.Voice.B \once\override NoteColumn.X-offset = #-2.5 %\shape #'((-0.75 . -0.5)(-0.75 . 0)(0 . 0)(0 . -0.5)) Tie
   \editionMod archA 18 3/4 prelude.four.Voice.A \shape #'(((0 . 0.5)(0 . 0.5)(0 . 0.5)(0 . 0.5)) ((0 . 0.5)(0 . 0.5)(0.75 . 0.5)(0.75 . 0.5))) Tie
   \editionMod archA 19 0/2 prelude.four.Voice.E \shape #'((-0.75 . -0.375)(-0.75 . 0)(0 . 0)(0 . -0.375)) Tie
   \editionMod archA 21 5/4 prelude.four.Voice.A \shape #'(((-0.75 . 0.25)(-0.75 . 0.25)(0 . 0.25)(0 . 0.25)) ((0 . 0.5)(0 . 0.5)(0.75 . 0.5)(0.75 . 0.5))) Tie
+  \editionMod archA 24 0/4 prelude.four.Voice.E \shape #'((0 . 0.25)(0 . 0)(0 . 0)(0 . 0.25)) Tie
   %\editionMod archA 25 5/8 prelude.four.Voice.B \shape #'((-1 . -0.75)(-1 . -1)(0 . -1)(0 . -0.75)) Tie
   \editionMod archA 25 6/8 prelude.four.Voice.B \shape #'((0 . 0.25)(0 . 0)(0 . 0)(0 . 0.25)) Tie
   \editionMod archA 27 3/4 prelude.four.Voice.B \shape #'((0 . 0.25)(0 . 0)(0 . 0)(0 . 0.25)) Tie
   \editionMod archA 28 0/4 prelude.four.Voice.A \shape #'((0 . 0.5)(0 . 0.5)(0.75 . 0.5)(0.75 . 0.5)) Tie
   \editionMod archA 29 3/4 prelude.four.Voice.A \shape #'((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) Tie
+  \editionMod archA 29 3/4 prelude.four.Voice.A \once \offset positions #'(-0.75 . 0.25) Staff.Arpeggio
   \editionMod archA 34 3/4 prelude.four.Voice.A \once \offset positions #'(-0.75 . 0.5) Staff.Arpeggio
   \editionMod archA 34 0/4 prelude.four.Voice.A \shape #'((0 . 0.5)(0 . 0.5)(0.75 . 0.5)(0.75 . 0.5)) Tie
   \editionMod archA 34 3/4 prelude.four.Voice.D \shape #'((0 . 0.5)(0 . 0.5)(0.75 . 0.5)(0.75 . 0.5)) Tie
@@ -315,31 +321,34 @@
 
 
 %fugue 4
-  \editionModList archA    fugue.four.Score \break #'(9 17 25 32 39  44 49 54 59 64 69)
-  \editionMod archA 44 0/1 fugue.four.Score \pageBreak
-  \editionMod archA 74 0/1 fugue.four.Score \allowPageTurn
-  \editionMod archA 10 1/2 fugue.four.Voice.C \shape #'((-1 . -0.5)(-1 . -0.5)(0 . -0.5)(0 . -0.5)) Tie
+%   \editionModList archA    fugue.four.Score \override NonMusicalPaperColumn.line-break-permission = ##f
+%   \editionModList archA    fugue.four.Score \break #'(8 15 22 29 36 40 44 49 53 57 61 66 70 74 78 82 86 90 94 99 103 107 111)
+%   \editionMod archA 44 0/1 fugue.four.Score \pageBreak
+%   \editionMod archA 74 0/1 fugue.four.Score \pageTurn
+%   \editionMod archA 94 0/1 fugue.four.Score \pageBreak
+  \editionMod archA 10 1/2 fugue.four.Voice.C \shape #'((-1 . -0.25)(-1 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
   \editionMod archA 13 0/1 fugue.four.Voice.D \shape #'((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) Tie
-  \editionMod archA 13 1/2 fugue.four.Voice.C \shape #'((-1 . -0.5)(-1 . -0.5)(0 . -0.5)(0 . -0.5)) Tie
-  \editionMod archA 14 1/2 fugue.four.Voice.B \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
-  \editionMod archA 14 1/2 fugue.four.Voice.E \shape #'((-1 . -0.5)(-1 . -0.5)(0 . -0.5)(0 . -0.5)) Tie
-  \editionMod archA 15 1/2 fugue.four.Voice.B \shape #'((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) Tie
-  \editionMod archA 16 1/2 fugue.four.Voice.B \shape #'((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) Tie
-  \editionMod archA 18 1/2 fugue.four.Voice.B \shape #'((0 . 0)(0 . 0.25)(-0.75 . 0.25)(-0.75 . 0)) Tie
+  \editionMod archA 13 1/2 fugue.four.Voice.C \shape #'(((-0.75 . -0.25)(-0.75 . -0.25)(0 . -0.25)(0 . -0.25)) ((0 . -0.25)(0 . -0.25)(0 . -0.25)(0 . -0.25))) Tie
+  \editionMod archA 14 1/2 fugue.four.Voice.B \shape #'((0 . -0.5)(0 . -0.75)(-0.5 . -0.75)(-0.5 . -0.5)) Tie
+  \editionMod archA 14 1/2 fugue.four.Voice.E \shape #'((-0.75 . -0.25)(-0.75 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
+  \editionMod archA 15 1/2 fugue.four.Voice.B \shape #'((0 . 0.25)(0 . 0.75)(0 . 0.75)(0 . 0.25)) Tie
+  \editionMod archA 16 1/2 fugue.four.Voice.B \shape #'((0.75 . 0.5)(0.75 . 0.75)(-0.75 . 0.75)(-0.75 . 0.5)) Tie
+  \editionMod archA 18 1/2 fugue.four.Voice.B \shape #'((0 . 0.5)(0 . 0.75)(-0.75 . 0.75)(-0.75 . 0.5)) Tie
   \editionMod archA 20 1/2 fugue.four.Voice.B \shape #'((0 . 0)(0 . -0.125)(0 . -0.125)(0 . 0)) Tie
   \editionMod archA 22 0/1 fugue.four.Voice.C \hide MultiMeasureRest
   \editionMod archA 25 0/1 fugue.four.Voice.C \override MultiMeasureRest.transparent = ##f
-  \editionMod archA 28 1/2 fugue.four.Voice.B \shape #'((-1 . -0.5)(-1 . -0.5)(0 . -0.5)(0 . -0.5)) Tie
+  \editionMod archA 25 0/1 fugue.four.Voice.D \shape #'((0.5 . 0)(0 . 0)(0 . 0)(0 . 0)) Tie
+  \editionMod archA 28 1/2 fugue.four.Voice.B \shape #'((-0.75 . -0.5)(-0.75 . -0.5)(0 . -0.5)(0 . -0.5)) Tie
   \editionMod archA 28 0/2 fugue.four.Voice.D \shape #'((0 . -0.125)(0 . 0.25)(0 . 0.25)(0 . -0.125)) Tie
   \editionMod archA 29 0/2 fugue.four.Voice.D \shape #'((0 . -0.125)(0 . 0.25)(-1.25 . 0.25)(-1.25 . -0.125)) Tie
-  \editionMod archA 31 0/2 fugue.four.Voice.B \shape #'(((0 . 0)(0 . 0)(0 . 0)(0 . 0)) ((0 . 0.5)(0 . 0.5)(-0.75 . 0.5)(-0.75 . 0.5))) Tie
+  \editionMod archA 31 0/2 fugue.four.Voice.B \shape #'((1.25 . 0.5)(1.25 . 0.5)(-1 . 0.5)(-1 . 0.5)) Tie
   \editionMod archA 32 0/2 fugue.four.Voice.A \shape #'((0 . 0.875)(0 . 2)(0 . 2)(0 . 0.875)) Tie
   \editionMod archA 33 0/2 fugue.four.Voice.D \shape #'((-1 . 0.25)(-1 . 0.25)(1 . 0.25)(1 . 0.25)) Tie
-  \editionMod archA 33 1/2 fugue.four.Voice.B \shape #'((0 . 0)(0 . -0.125)(0 . -0.125)(0 . 0)) Tie
+  \editionMod archA 33 1/2 fugue.four.Voice.B \shape #'((0 . -0.325)(0 . -0.875)(-0.5 . -0.875)(-0.5 . -0.325)) Tie
   \editionMod archA 33 3/4 fugue.four.Voice.A \shape #'((0 . 0.5)(0 . 0.5)(1 . 0.5)(1 . 0.5)) Tie
   \editionMod archA 34 0/2 fugue.four.Voice.D \shape #'((-1 . 0.25)(-1 . 0.25)(1 . 0.25)(1 . 0.25)) Tie
-  \editionMod archA 38 0/2 fugue.four.Voice.D \shape #'(((-1 . 0.25)(-1 . 0.25)(0 . 0.25)(0 . 0.25))((0 . 0.25)(0 . 0.25)(1 . 0.25)(1 . 0.25))) Tie
-  \editionMod archA 39 3/4 fugue.four.Voice.D \shape #'(((0 . 0.25)(0 . 0.25)(1 . 0.25)(1 . 0.25))) Tie
+%   \editionMod archA 38 0/2 fugue.four.Voice.D \shape #'(((-1 . 0.25)(-1 . 0.25)(0 . 0.25)(0 . 0.25))((0 . 0.25)(0 . 0.25)(1 . 0.25)(1 . 0.25))) Tie
+  \editionMod archA 39 3/4 fugue.four.Voice.D \shape #'(((0 . 0.25)(0 . 0.25)(0 . 0.25)(0 . 0.25))((0 . 0.25)(0 . 0.25)(0 . 0.25)(0 . 0.25))) Tie
   \editionMod archA 40 0/2 fugue.four.Voice.C \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
   \editionMod archA 42 1/2 fugue.four.Voice.C \shape #'((-0.75 . -0.5)(-0.75 . -0.5)(0 . -0.5)(0 . -0.5)) Tie
   \editionMod archA 43 1/2 fugue.four.Voice.C \shape #'(((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) ((0 . -0.5)(0 . -0.75)(1 . -0.75)(1 . -0.5))) Tie
@@ -357,27 +366,27 @@
   \editionMod archA 56 1/2 fugue.four.Voice.A \shape #'((0 . 0.25)(0 . 0.25)(1 . 0.25)(1 . 0.25)) Tie
   \editionMod archA 70 0/1 fugue.four.Voice.D \hide MultiMeasureRest
   \editionMod archA 72 0/1 fugue.four.Voice.D \override MultiMeasureRest.transparent = ##f
-  \editionMod archA 72 1/2 fugue.four.Voice.B \shape #'((-1 . -0.5)(-1 . -0.5)(1 . -0.5)(1 . -0.5)) Tie
+  \editionMod archA 72 1/2 fugue.four.Voice.B \shape #'((-0.75 . -0.25)(-0.75 . -0.25)(0.75 . -0.25)(0.75 . -0.25)) Tie
   \editionMod archA 78 0/1 fugue.four.Voice.C \small %\hide MultiMeasureRest
   \editionMod archA 81 0/1 fugue.four.Voice.C \normalsize %\override MultiMeasureRest.transparent = ##f
   \editionMod archA 78 0/2 fugue.four.Voice.A \shape #'((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) Tie
   \editionMod archA 79 1/2 fugue.four.Voice.A \shape #'((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) Tie
   \editionMod archA 85 1/2 fugue.four.Voice.D \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
+  \editionMod archA 86 1/8 fugue.four.Voice.A \once\override NoteColumn.X-offset = #0.5
   \editionMod archA 91 0/2 fugue.four.Voice.A \shape #'((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) Tie
   \editionMod archA 92 1/2 fugue.four.Voice.A \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
   \editionMod archA 99 0/2 fugue.four.Voice.C \shape #'((-1 . -1.5)(-1 . -1.75)(0 . -1.75)(0 . -1.5)) Tie
-  \editionMod archA 99 3/4 fugue.four.Voice.B \shape #'((0.75 . 0.5)(0.75 . 0.75)(-0.75 . 0.75)(-0.75 . 0.5)) Tie
   \editionMod archA 101 1/2 fugue.four.Voice.A \shape #'((0 . 0)(0 . 0.125)(0 . 0.125)(0 . 0)) Tie
   \editionMod archA 101 1/2 fugue.four.Voice.B \shape #'((0 . -0.25)(0 . 0)(-0.5 . 0)(-0.5 . -0.25)) Tie
-  \editionMod archA 102 1/2 fugue.four.Voice.B \shape #'(((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) ((0 . 0)(0 . 0)(-1 . 0)(-1 . 0))) Tie
+  \editionMod archA 102 1/2 fugue.four.Voice.B \shape #'((0 . -1)(0 . -0.75)(-0.75 . -0.75)(-0.75 . -1)) Tie
   \editionMod archA 102 1/2 fugue.four.Voice.E \shape #'(((-0.75 . -0.25)(-0.75 . -0.25)(0 . -0.25)(0 . -0.25)) ((0 . -0.25)(0 . -0.25)(0 . -0.25)(0 . -0.25))) Tie
   \editionMod archA 105 1/2 fugue.four.Voice.B \once\tieDown
   \editionMod archA 105 1/2 fugue.four.Voice.B \shape #'((0.75 . 0.5)(0.75 . 0.75)(-1 . 0.75)(-1 . 0.5)) Tie
-  \editionMod archA 106 0/1 fugue.four.Voice.E \shape #'( ((-1 . -0.25)(-1 . -0.25)(0 . -0.25)(0 . -0.25)) ((0 . -0.25)(0 . -0.25)(1 . -0.25)(1 . -0.25)) ) Tie
   \editionMod archA 108 1/2 fugue.four.Voice.A \shape #'((0 . 1)(0 . 1.5)(1 . 1.5)(1 . 1)) Tie
-  \editionMod archA 110 0/1 fugue.four.Voice.E \shape #'(((-1 . -0.25)(-1 . -0.25)(0 . -0.25)(0 . -0.25)) ((0 . -0.25)(0 . -0.25)(1 . -0.25)(1 . -0.25))) Tie
+%   \editionMod archA 110 0/1 fugue.four.Voice.E \shape #'(((-1 . -0.25)(-1 . -0.25)(0 . -0.25)(0 . -0.25)) ((0 . -0.25)(0 . -0.25)(1 . -0.25)(1 . -0.25))) Tie
   \editionMod archA 110 1/2 fugue.four.Voice.A \shape #'((0 . 0)(0 . 0.125)(0 . 0.125)(0 . 0)) Tie
-  \editionMod archA 111 0/1 fugue.four.Voice.B \shape #'((1 . -0.5)(0 . 0)(0 . 0)(-0.75 . -0.5)) Tie
+  \editionMod archA 110 1/2 fugue.four.Voice.B \shape #'((0 . -0.25)(0 . 0)(-0.75 . 0)(-0.75 . -0.25)) Tie
+  \editionMod archA 111 0/1 fugue.four.Voice.B \shape #'((0.875 . -0.25)(0 . 0)(0 . 0)(-0.75 . -0.25)) Tie
   \editionMod archA 112 0/1 fugue.four.Voice.A \shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Tie
   \editionMod archA 112 0/1 fugue.four.Voice.E \shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Tie
   \editionMod archA 113 0/1 fugue.four.Voice.A \shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Tie
@@ -396,6 +405,7 @@
   \editionMod archA 3 3/4 fugue.five.Voice.D \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
   \editionMod archA 5 1/4 fugue.five.Voice.B \shape #'(((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0))((-0.25 . 0)(-0.25 . -0.25)(0 . -0.25)(0 . 0))) Tie
   \editionMod archA 5 1/2 fugue.five.Score  \bar ""
+  \editionMod archA 15 1/4 fugue.five.Voice.C \once\override VoiceFollower.bound-details = #'((right (attach-dir . 0) (padding . 1)) (left (attach-dir . 1) (padding . 1)))
   \editionMod archA 15 1/4 fugue.five.Voice.A \shape #'((0 . 0.5)(0 . 0.5)(1 . 0.5)(1 . 0.5)) Tie
   \editionMod archA 15 2/4 fugue.five.Voice.B \shape #'((1 . 1)(1 . 1)(0 . 1)(0 . 1)) Tie
   \editionMod archA 15 2/4 fugue.five.Voice.C \shape #'((-0.75 . -0.25)(-0.75 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
@@ -403,7 +413,7 @@
   \editionMod archA 16 2/8 fugue.five.Voice.B \once\override Beam.positions =  #'(-3.75 . -4.25)
   \editionMod archA 16 2/8 fugue.five.Voice.C \once\override Beam.positions =  #'(-5.25 . -6)
   \editionMod archA 24 1/2 fugue.five.Score  \bar ""
-  
+
 
 %prelude six
   \editionMod archA 15 1/2 prelude.six.Voice.B \shape #'((0 . -0.25)(-2 . 0)(2 . 0)(0 . -0.25)) Tie
@@ -458,6 +468,8 @@
   \editionMod archA 57 3/4 prelude.seven.Voice.A \shape #'((0 . 0.25)(0 . 0.75)(0 . 0.75)(0 . 0.25)) Tie
   \editionMod archA 63 1/4 prelude.seven.Voice.B \shape #'((-0.75 . -0.5)(-0.75 . -0.5)(0 . -0.5)(0 . -0.5)) Tie
   \editionMod archA 63 3/4 prelude.seven.Voice.C \shape #'(((0 . 0.5)(0 . 0.5)(0 . 0.5)(0 . 0.5)) ((0 . 0.5)(0 . 0.5)(0.75 . 0.5)(0.75 . 0.5))) Tie
+  \editionMod archA 64 1/4 prelude.seven.Voice.B \shape #'((-0.75 . -0.25)(-0.75 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
+  \editionMod archA 65 0/4 prelude.seven.Voice.B \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
   \editionMod archA 65 3/4 prelude.seven.Voice.A \shape #'((0 . 0.5)(0 . 0.5)(0.75 . 0.5)(0.75 . 0.5)) Tie
   \editionMod archA 67 1/4 prelude.seven.Voice.A \shape #'((0 . 0.25)(0 . 0.25)(0.75 . 0.25)(0.75 . 0.25)) Tie
   \editionMod archA 68 0/1 prelude.seven.Voice.D \shape #'((0 . 0)(-1 . -0.25)(1 . -0.25)(0 . 0)) Tie
@@ -522,6 +534,7 @@
   \editionMod archA 75 3/4 fugue.eight.Voice.B \shape #'((-0.5 . -0.25)(-0.5 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
   \editionMod archA 76 2/4 fugue.eight.Voice.C \shape #'(((-0.5 . -0.25)(-0.5 . -0.25)(0 . -0.25)(0 . -0.25))((0 . -0.25)(0 . -0.25)(0.5 . -0.25)(0.5 . -0.25))) Tie
   \editionMod archA 78 3/4 fugue.eight.Voice.C \shape #'((-0.5 . 0.25)(-0.5 . 0.25)(0.5 . 0.25)(0.5 . 0.25)) Tie
+  \editionMod archA 80 3/8 fugue.eight.Voice.C \shape #'((0 . 0.375)(0 . 0.375)(0 . 0.375)(0 . 0.375)) Tie
 
 %prelude nine
   \editionModList archA prelude.nine.Score \break #'(3 5 7 9 12 14 16 18 20 22)
@@ -552,7 +565,7 @@
 
 %fugue nine
   \editionMod archA 15 0/1 fugue.nine.Score  \pageBreak
-  \editionModList archA fugue.nine.Score      \break #'(6 8 10 12) 
+  \editionModList archA fugue.nine.Score      \break #'(6 8 10 12)
   \editionMod archA 3  1/2 fugue.nine.Staff   \bar""
   \editionMod archA 4  1/4 fugue.nine.Voice.B \shape #'((-0.75 . -0.5)(-0.75 . -0.5)(0 . -0.5)(0 . -0.5)) Tie
   \editionMod archA 10 1/4 fugue.nine.Voice.B \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
@@ -639,7 +652,7 @@
   \editionMod archA 19 2/4 fugue.twelve.Voice.B \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
   \editionMod archA 22 1/4 fugue.twelve.Voice.B \shape #'((0 . 0)(0 . -0.125)(0 . -0.125)(0 . 0)) Tie
   \editionMod archA 23 1/4 fugue.twelve.Voice.B \shape #'((0 . 0.25)(0 . 0)(0 . 0)(0 . 0.25)) Tie
-  \editionMod archA 24 1/4 fugue.twelve.Voice.B \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie  
+  \editionMod archA 24 1/4 fugue.twelve.Voice.B \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
   \editionMod archA 30 1/4 fugue.twelve.Voice.B \shape #'((0 . -0.75)(0 . -0.5)(0 . -0.5)(0 . -0.75)) Tie
   \editionMod archA 31 0/4 fugue.twelve.Score   \allowPageTurn
   \editionMod archA 33 2/4 fugue.twelve.Voice.A \shape #'((0 . 0.25)(0 . 0)(0 . 0)(0 . 0.25)) Tie
@@ -663,6 +676,7 @@
   \editionMod archA 24 6/16  prelude.thirteen.Voice.A \shape #'((-0.75 . -0.25)(-0.75 . -0.25)(0.75 . -0.25)(0.75 . -0.25)) Tie
 
 %fugue thirteen
+  %\editionModList archA fugue.thirteen.Score   \break #'(4 7 10 13 16 18 20 23 26 29 32)
   \editionMod archA 9  3/4 fugue.thirteen.Voice.A \shape #'(((0 . 0.25)(0 . 0.25)(0 . 0.25)(0 . 0.25)) ((0 . 0.25)(0 . 0.25)(0.5 . 0.25)(0.5 . 0.25))) Tie
   \editionMod archA 10 0/4 fugue.thirteen.Voice.B \shape #'((-0.75 . -0.5)(-0.75 . -0.5)(0 . -0.5)(0 . -0.5)) Tie
   \editionMod archA 21 3/4 fugue.thirteen.Voice.B \shape #'( (0 . -0.5) (0 . -1.75) (0 . -1.75) (0 . -0.5) ) Tie
@@ -687,8 +701,8 @@
   \editionMod archA 17 2/4 fugue.fourteen.Voice.B \shape #'((-0.75 . -0.25)(-0.75 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
   \editionMod archA 18 5/4 fugue.fourteen.Voice.A \shape #'(((0 . 0.25)(0 . 0.25)(0 . 0.25)(0 . 0.25)) ((0 . 0.25)(0 . 0.25)(0.5 . 0.25)(0.5 . 0.25))) Tie
   \editionMod archA 19 0/4 fugue.fourteen.Voice.B \shape #'((-0.75 . -0.25)(-0.75 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
-  \editionMod archA 20 0/1 fugue.fourteen.Voice.C \hide MultiMeasureRest
-  \editionMod archA 28 0/1 fugue.fourteen.Voice.C \override MultiMeasureRest.transparent = ##f
+  %\editionMod archA 20 0/1 fugue.fourteen.Voice.C \hide MultiMeasureRest
+  %\editionMod archA 28 0/1 fugue.fourteen.Voice.C \override MultiMeasureRest.transparent = ##f
   \editionMod archA 23 2/4 fugue.fourteen.Voice.A \shape #'((0 . 0.25)(0 . 0.25)(0.75 . 0.25)(0.75 . 0.25)) Tie
   \editionMod archA 25 3/4 fugue.fourteen.Voice.A \shape #'((0 . 0.25)(0 . 0.25)(0.75 . 0.25)(0.75 . 0.25)) Tie
   \editionMod archA 32 1/4 fugue.fourteen.Voice.B \shape #'((-0.75 . -0.25)(-0.75 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
@@ -734,7 +748,7 @@
   \editionMod archA 18 1/2 prelude.sixteen.Voice.H \shape #'((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) Tie
 
 %fugue sixteen
-  % \editionMod archA 9  1/4  fugue.sixteen.Voice.A \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
+  \editionMod archA 9  1/4  fugue.sixteen.Voice.A \shape #'((0 . 0)(0 . -0.125)(0 . -0.125)(0 . 0)) Tie
   \editionMod archA 15 3/4  fugue.sixteen.Voice.B \shape #'((-0.375 . -0.75)(-0.25 . -0.75)(0 . -0.75)(0 . -0.75)) Tie
   \editionMod archA 17 3/8  fugue.sixteen.Voice.C \shape #'((0 . 0.25)(0 . 0.25)(0.5 . 0.25)(0.5 . 0.25)) Tie
   \editionMod archA 27 0/4  fugue.sixteen.Voice.A \shape #'((0 . 0.25)(0 . 0)(0.75 . 0)(0.75 . 0.25)) Tie
@@ -752,10 +766,13 @@
   \editionMod archA 4 0/4 fugue.seventeen.Voice.D \shape #'((-0.75 . 0.25)(-0.75 . 0.25)(0.75 . 0.25)(0.75 . 0.25)) Tie
   \editionMod archA 6 0/1 fugue.seventeen.Voice.A \shape #'((0 . 0.25)(0 . 0.25)(0.75 . 0.25)(0.75 . 0.25)) Tie
   \editionMod archA 8 1/4 fugue.seventeen.Voice.A \shape #'((0 . 0.25)(0 . 0.25)(0.75 . 0.25)(0.75 . 0.25)) Tie
+  \editionMod archA 13 3/8 fugue.seventeen.Voice.C \shape #'((0 . 0.25)(0 . 0.25)(0.5 . 0.25)(0.5 . 0.25)) Tie
   \editionMod archA 18 3/4 fugue.seventeen.Voice.A \shape #'(((0 . 0.25)(0 . 0.25)(0 . 0.25)(0 . 0.25))((0 . 0.25)(0 . 0.25)(0.25 . 0.25)(0.25 . 0.25))) Tie
   \editionMod archA 23 0/4 fugue.seventeen.Voice.C \shape #'((0 . 0)(0 . -0.125)(0 . -0.125)(0 . 0)) Tie
   \editionMod archA 30 0/4 fugue.seventeen.Voice.D \shape #'((-0.5 . -0.25)(-0.5 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
+
 %prelude eighteen
+  \editionModList archA prelude.eighteen.Score \break #'(4 7 10 13 15 18 21 24 27)
   \editionMod archA 8 0/4 prelude.eighteen.Voice.B \shape #'((0 . 0.25)(0 . 0)(0 . 0)(0 . 0.25)) Tie
   \editionMod archA 10 0/4 prelude.eighteen.Voice.B \shape #'((-0.5 . 0.25)(-0.5 . 0.25)(0.5 . 0.25)(0.5 . 0.25)) Tie
   \editionMod archA 15 0/4 prelude.eighteen.Voice.A \shape #'((-0.5 . -0.25)(-0.5 . -0.25)(0.5 . -0.25)(0.5 . -0.25)) Tie
@@ -766,6 +783,7 @@
   \editionMod archA 25 0/8 prelude.eighteen.Voice.A \shape #'((0 . 0.5)(0 . 0.5)(0.75 . 0.5)(0.75 . 0.5)) Tie
 
 %fugue eighteen
+  \editionModList archA fugue.eighteen.Score \break #'(4 7 10 13 15 18 21 24 27)
   \editionMod archA 6 1/2 fugue.eighteen.Voice.C \shape #'((0 . 0.5)(0 . 0.5)(0.75 . 0.5)(0.75 . 0.5)) Tie
   \editionMod archA 14 1/2 fugue.eighteen.Voice.B \shape #'((-0.75 . -0.5)(-0.75 . -0.5)(0 . -0.5)(0 . -0.5)) Tie
   \editionMod archA 28 1/2 fugue.eighteen.Voice.B \shape #'(((-0.75 . -0.5)(-0.75 . -0.5)(0 . -0.5)(0 . -0.5)) ((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . -0.5))) Tie
@@ -833,10 +851,10 @@
   \editionMod archA 24 0/2 fugue.twenty.Voice.A \shape #'((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) Tie
   \editionMod archA 35 1/2 fugue.twenty.Voice.D \shape #'(((-0.5 . 0.25)(-0.5 . 0.25)(0 . 0.25)(0 . 0.25))((0 . 0.25)(0 . 0.25)(0.5 . 0.25)(0.5 . 0.25))) Tie
   \editionMod archA 39 7/8 fugue.twenty.Voice.C \shape #'((0 . 0.25)(0 . 0.25)(0.5 . 0.25)(0.5 . 0.25)) Tie
-    \editionMod archA 42 3/4 fugue.twenty.Voice.B \shape #'((-0.5 . -0.25)(-0.5 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
-    \editionMod archA 43 1/2 fugue.twenty.Voice.B \shape #'((0 . 0)(0 . -0.125)(0 . -0.125)(0 . 0)) Tie
-    \editionMod archA 43 1/2 fugue.twenty.Voice.C \shape #'((0 . 0.25)(0 . 0.25)(0 . 0.25)(0 . 0.25)) Tie
-    \editionMod archA 50 0/2 fugue.twenty.Voice.D \shape #'((-0.25 . -1.5)(-0.25 . -1.25)(0 . -1.25)(0 . -1.5)) Tie
+  \editionMod archA 42 3/4 fugue.twenty.Voice.B \shape #'((-0.5 . -0.25)(-0.5 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
+  \editionMod archA 43 1/2 fugue.twenty.Voice.B \shape #'((0 . 0)(0 . -0.125)(0 . -0.125)(0 . 0)) Tie
+  \editionMod archA 43 1/2 fugue.twenty.Voice.C \shape #'((0 . 0.25)(0 . 0.25)(0 . 0.25)(0 . 0.25)) Tie
+  \editionMod archA 50 0/2 fugue.twenty.Voice.D \shape #'((-0.25 . -1.5)(-0.25 . -1.25)(0 . -1.25)(0 . -1.5)) Tie
   \editionMod archA 59 3/4 fugue.twenty.Voice.D \shape #'(((-0.75 . -0.25)(-0.75 . -0.25)(0 . -0.25)(0 . -0.25)) ((0 . -0.25)(0 . -0.25)(0 . -0.25)(0 . -0.25))) Tie
   \editionMod archA 60 1/2 fugue.twenty.Voice.C \shape #'((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) Tie
   \editionMod archA 61 0/2 fugue.twenty.Voice.C \shape #'((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) Tie
@@ -939,6 +957,7 @@
   \editionMod archA 15 1/2 fugue.twentyfour.Voice.A \shape #'((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) Tie
   \editionMod archA 15 1/2 fugue.twentyfour.Voice.B \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
   \editionMod archA 22 3/4 fugue.twentyfour.Voice.A \shape #'((-0.75 . -0.25)(-0.75 . -0.25)(0.75 . -0.25)(0.75 . -0.25)) Tie
+  \editionMod archA 22 3/4 fugue.twentyfour.Voice.B \once\override Beam.positions = #'(-3.5 . -3.75)
   \editionMod archA 23 1/4 fugue.twentyfour.Voice.A \shape #'((-0.75 . -0.25)(-0.75 . -0.25)(0.75 . -0.25)(0.75 . -0.25)) Tie
   \editionMod archA 24 0/4 fugue.twentyfour.Voice.B \once \tieUp
   \editionMod archA 24 0/4 fugue.twentyfour.Voice.B \shape #'((0 . -0.25)(0 . -0.75)(0 . -0.75)(0 . -0.25)) Tie

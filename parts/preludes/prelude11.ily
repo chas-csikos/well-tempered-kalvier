@@ -50,7 +50,7 @@ vTwo = \relative c {
   bf2. a8 c a f d f |
   g bf g e c e f16 c a g a c f, a c ef d c |
   f16 d bf a bf d f, bf d f e d e c bf a bf e g, bf e g f e |
-  f8 a, d bf8.^\trill a32 bf c8 f,4 r8 r16 c a c f,8 |
+  f8 a, d bf8.^\trill a32 bf c8 f,4 r8 r16 c' a c f,8 |
   \bar "|."
 }
 

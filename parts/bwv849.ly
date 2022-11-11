@@ -18,13 +18,7 @@
     }
     \paper {
       page-count       = #2
-      min-systems-per-page = #6
-      system-system-spacing = #'(
-          (basic-distance   . 8)
-          (minimum-distance . 4)
-          (padding          . 1)
-          (stretchability   . 8)
-        )
+      systems-per-page = #6
     }
     \preludeFour
   }
@@ -36,10 +30,12 @@
       opus        = "BWV 849"
     }
     \paper {
-      page-breaking = #ly:page-turn-breaking
-      page-count    = #4      
-      max-systems-per-page = #7
-      % min-systems-per-page = #6
+%       page-breaking = #ly:page-turn-breaking
+%       max-systems-per-page = #7
+%       min-systems-per-page = #5
+      page-count    = #4
+      systems-per-page = #6
+
     }
     \fugueFour
   }

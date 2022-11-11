@@ -83,7 +83,7 @@ left = \relative e {
       e4. ds4. ~ ds ~ ds8 cs b | %5
       as2. ~ as4. b ~ |
       b8 cs d e4. ~ e ~ e8 ds cs |
-      b4. ~ b8 as 
+      b4. ~ b8 as
     \staffOne\voiceTwo
         e' ds2. | %8
     \staffTwo\voiceOne
@@ -95,7 +95,7 @@ left = \relative e {
     \relative e {
       \voiceTwo
       \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie %% Injection by OpenLilyLib failed.
-      e1. ~ | %1
+      e2. ~ e ~ | %1
       e2. ~ e4. ds |
       e8 gs b e ds e as,2. |
       b,8 ds fs b as b e,2. |
@@ -105,7 +105,7 @@ left = \relative e {
       b4 es,8 fs4. b,8 ds fs b a b |
       gs4. ~ gs8 fs gs es2. |
       fs4. d ds cs |
-      b2. b'8 gs fs gs16 a b8 cs, |
+      b2. b'8 gs fs gs16 a b8 es, |
 
     }
   >>

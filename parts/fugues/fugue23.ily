@@ -62,7 +62,7 @@ alto = \relative c' {
     s1 | % m. 1
     s1 | % m. 2
     r8 fs ds e fs4 b,8 ds16 es | % m. 3
-    fs8 gs16 as b8 as gs2 \trill | % m. 4
+    fs8 gs16 as b8 as gs2 %{ \trill%}  | % m. 4
     fs4 r8 gs16 fs e ds cs b as8 fs' | % m. 5
     ds8 e16 fs gs as b8~ b as16 gs as b as gs | % m. 6
     fs4. e8~ e ds16 cs ds e fs gs | % m. 7
@@ -175,7 +175,7 @@ bass = \relative c {
     R1 | % m. 6
   \normalsize
     r8 fs ds e fs4 b,8 ds16 es | % m. 7
-    fs8 gs16 as b8 as gs2-\parenthesize \trill | % m. 8
+    fs8 gs16 as b8 as gs2%{ -\parenthesize \trill%}  | % m. 8
     fs4 r r8 gs16 a gs fs e ds | % m. 9
   \barNumberCheck #10
     cs8 cs' ds e fs fs,16 gs fs e ds cs | % m. 10

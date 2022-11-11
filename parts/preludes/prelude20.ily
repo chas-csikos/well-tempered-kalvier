@@ -15,7 +15,7 @@ right = \relative a' {
   a16 b  c8 e c a e a c8 e | % 1
   b16 c d8 f d b8 gs b d f | % 2
   d16 e f8 gs f d8 b d f gs | % 3
-  a8 g16 f e d c8 \voiceOne r r \oneVoice r4. | % 4
+  a8 g16 f e d \once\stemUp c8 \voiceOne r r \oneVoice r4. | % 4
   <b e g>4. e16 ds e ds16 e ds e b a16 g fs e ~ | % 5
   <e a c>4. ~ c'16 b c b c b c16 g' fs e16 ds e | % 6
   <fs, a c ds>4. ~ ds'16 e fs e16 fs e fs e16 ds fs b, a | % 7

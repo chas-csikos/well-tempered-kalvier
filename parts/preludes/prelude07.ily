@@ -76,10 +76,10 @@ vOne = \relative g' {
     c16 b c d d8. c16 c4 r | %41
     r16 bf c df c bf af g f8 g16 af bf16 af g f | %42
     %\once\override NoteColumn.force-hshift = #0.4
-    \staffTwo\voiceThree
+    %\staffTwo\voiceThree
       ef16 d c bf
-    \staffOne\voiceOne
-    \once\showStaffSwitch
+    %\staffOne\voiceOne
+    %\once\showStaffSwitch
         ef'8 ef ef4 d | %43
     g2. f4 | %44
   \barNumberCheck #45
@@ -178,7 +178,7 @@ vTwo = \relative c'' {
     r16 f'16 g af g f ef d c g' af bf af g f ef | %39
   \barNumberCheck #40
     f2 d4 ef ~ | %40
-    ef8 af g f ef4 af ~ | %41
+    ef8[ af] g[ f] ef4 af ~ | %41
     af4 g c bf ~ | %42 %fix tie
   \noBreak
     bf2 ~ bf ~ | %43
@@ -201,7 +201,7 @@ vTwo = \relative c'' {
     r2 d4 g ~ | %54
   \barNumberCheck #55
     g f bf2 ~ | %55
-    bf8 af d4 ~ d c4 | %56
+    bf8 af d2%{ 4 ~ d%}  c4 | %56
     f2 ef4 ~ ef16 ef f gf | %57
     f16 ef df c bf4 r16 bf c df c bf af g | %58
     f8 g16 af bf af g f ef8 f16 g af8 af | %59
@@ -387,7 +387,7 @@ vFour = \relative ef {
   \barNumberCheck #45
     af16 f g af \oneVoice g f ef d c bf c df c bf af g |
     f4 \voiceTwo bf2 g4 |
-    c2 d8 bf ef d |
+    c2 d8[ bf] ef[ d] |
     c4. bf8 a4 bf ~ |
     bf16 a bf c bf a g f bf4 ef ~ |
   \barNumberCheck #50
@@ -439,6 +439,7 @@ preludeSeven = \score {
     \context {
       \Score
       \editionID ##f prelude.seven
+      \mergeDifferentlyHeadedOn
     }
   }
 }

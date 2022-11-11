@@ -38,11 +38,17 @@
 \layout {
   \accidentalStyle piano
   \set Score.extraNatural = ##f
+  
   %better spacing & smaller size than Bonum
   \override Score.BarNumber.font-name = "TeX Gyre Schola"
+  
   \context {
     \Score
+    \mergeDifferentlyDottedOn
     barNumberVisibility = #first-bar-number-invisible-save-broken-bars
+
+    %\override Beam.details.stem-length-demerit-factor = #12
+    %\override Beam.damping = 1.5
   }
   \context {
     \PianoStaff
@@ -54,12 +60,7 @@
         (stretchability   . 5)  ;5
       )
   }
-  % \override Stem.details = #'(
-  %   (lengths 3.5 3.5 3.5 4.25 5.0 6.0)             ;3.5 3.5 3.5 4.25 5.0 6.0
-  %   (beamed-lengths 3.26 3.5 3.6)                  ;3.26 3.5 3.6
-  %   (beamed-minimum-free-lengths 1.83 1.5 1.25)    ;1.83 1.5 1.25
-  %   (beamed-extreme-minimum-free-lengths 2.0 1.25) ;2.0 1.25
-  % )
+  
   % \context {
   %   \Voice
   %   \consists "Melody_engraver"

@@ -64,7 +64,7 @@ rightHandTwo = \relative c''{
   \barNumberCheck #32
     \voiceTwo
     f16 cs d a bf g e' g, a f d' f, g e cs' e, | %32
-    <d f gs b d>4\arpeggio s2. | %33
+    <d f gs b>4\arpeggio s2. | %33
     <cs e g bf>8\arpeggio r8 <d f gs b>8\arpeggio r8 <e a>2 | %33
 }
 
@@ -145,7 +145,7 @@ preludeFive = \score {
         \new Voice \leftHandTwo
       >>
   >>
-  \layout { 
+  \layout {
     \context {
       \Score
       \editionID ##f prelude.five

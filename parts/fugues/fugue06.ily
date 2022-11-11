@@ -105,7 +105,7 @@ vTwo = \relative c' {
     g4 gs8[ fs e gs] | %16
     a8[ a, b c d b] | %17
   \oneVoice
-    cs16 a gs a f'4-. d4\trill | %18
+    cs16 a gs a f'4\parenthesize-. d4\trill | %18
     e8[ f] e16 d c d d c b c | %19
   \barNumberCheck #20
   \voiceTwo
@@ -162,7 +162,7 @@ vThree = \relative c' {
     R2. | %2
   \staffOne \voiceTwo
     c8\rest a8[ b c d b] | %3
-    c16 a gs a f'4 d\trill | %4
+    c16 a gs a f'4-. d\trill | %4
   \barNumberCheck #5
     e4~ e16 d cs b d cs b a | %5
     d4 d4\rest d4\rest | %6
@@ -206,7 +206,7 @@ vThree = \relative c' {
   \staffTwo \voiceOne
       fs,4-. a-. | %30
     a16\rest g16[ fs g] e4-. g-. | %31
-    a16\rest f16[ e f] d4-. f-. | %32
+    a16\rest f16[ e f] d4\parenthesize-. f-. | %32
     c'8\rest f,8[ g a bf g] | %33
     a[ f g a] g4 | %34
   \barNumberCheck #35

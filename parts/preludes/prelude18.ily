@@ -61,7 +61,7 @@ left = \relative a {
   \global
   \voiceTwo
   gs4. fss
-  s4. e'8 ds cs |
+  gs16 as  b gs as cs e8 ds cs |
   b4. as |
   gs4 e8 fs gs as |
   b8 r r \oneVoice r4. |
@@ -96,7 +96,7 @@ middle = \relative a {
   \voiceOne
   b8 ds
   cs8 ~ cs b as |
-  gs16 as  b gs as cs s8  ds4 ~ |
+  s4. s8  ds4 ~ |
   ds8  gs cs, ~ cs fs b, ~ |
   b8 e4 ~  e8 ds cs |
   \staffTwo \voiceOne b16 cs ds b cs \staffOne \voiceTwo e gs8 fs e |

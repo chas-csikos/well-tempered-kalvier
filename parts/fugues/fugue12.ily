@@ -101,12 +101,24 @@ alto = \relative c' {
     r4 f af g | % m. 4
     fs4 b c f, | % m. 5
     e4 ef d2 | % m. 6
-    c8 c16 d e8 d16 e f
+    c8 c16 d e8 d16 e
+      \override Stem.layer = #2
+      \once \override Beam.layer = #1
+      \once \override Beam.whiteout-style = #'outline
+      \once \override Beam.whiteout = #2
+      f
   \staffTwo \voiceOne
     e, f g af4 | % m. 7
-    r16 f g af bf4 r16 af bf %8
+  \revert Stem.layer
+    r16 f g af bf4 r16
+      \override Stem.layer = #2
+      \once \override Beam.layer = #1
+      \once \override Beam.whiteout-style = #'outline
+      \once \override Beam.whiteout = #2
+      af bf %8
   \staffOne \voiceTwo
       c df4 | % m. 8 end
+  \revert Stem.layer
     r16 %9
   \staffOne \voiceTwo
       c d e f4~ f8 e16 d e4 | % m. 9
@@ -168,8 +180,14 @@ alto = \relative c' {
   \staffTwo \voiceOne
       d,16 ef f8 fs | % m. 46
     g8 g16 a b8 a16 b c b c d ef4 | % m. 47
-    r16 c d ef f4~ f16 %48
+    r16 c d ef f4 ~
+      \override Stem.layer = #2
+      \once \override Beam.layer = #1
+      \once \override Beam.whiteout-style = #'outline
+      \once \override Beam.whiteout = #2
+      f16 %48
   \staffOne \voiceTwo
+  \revert Stem.layer
       ef f g af4 | % m. 48
     r16 g a b c4~ c8 b16 a b c b d | % m. 49
   \barNumberCheck #50
@@ -189,18 +207,18 @@ alto = \relative c' {
 tenor = \relative c' {
   \global
   \barNumberCheck #1
-  \staffOne\voiceTwo
+  \staffTwo\voiceOne
     r4 c df c | % m. 1
-    b4 e f \staffTwo\voiceOne bf, | % m. 2
+    b4 e f bf, | % m. 2
     a4 af g2 | % m. 3
     f8 f16 g af8 af16 bf c b, c d ef4 | % m. 4
     r16 c d ef f4 r16 ef f g af4 | % m. 5
     r16 g a b c4~ c8 b16 a b4 \prall | % m. 6
     \staffOne\once\stemDown c8 \staffTwo g c bf \voiceThree af %7
-  \staffOne \voiceOne
+  \once\showStaffSwitch\staffOne \voiceOne
       f'4 ef8 | % m. 7
     d8 ef16 f g f e d c4 %8
-  \staffTwo \voiceOne
+  \once\showStaffSwitch \staffTwo \voiceOne
       r16 bf af g | % m. 8
     f4 r16 f g af bf4. af16 g | % m. 9
   \barNumberCheck #10
@@ -265,7 +283,8 @@ tenor = \relative c' {
   \once \showStaffSwitch
   \staffOne \voiceTwo
       b'\rest r4 r8 c'4 bf8 | % m. 47
-    a8 bf16 c d c b a g4 %48  
+    a8 bf16 c d c b a g4 %48
+  \once\override VoiceFollower.layer = #-1
   \once \showStaffSwitch
   \staffTwo \oneVoice
    \once\override VoiceFollower.bound-details = #'((right (attach-dir . 0) (padding . 1.5)) (left (attach-dir . 0) (padding . 1.25)))
@@ -289,8 +308,8 @@ tenor = \relative c' {
 bass = \relative c {
   \global
   \barNumberCheck #1
-    R1 | % m. 1
   \voiceTwo
+    R1 | % m. 1
     R1 | % m. 2
     R1 | % m. 3
   \teeny

@@ -134,20 +134,22 @@ tenor = \relative c {
     cs8 ds es4 fs8 e d cs b a gs b | % m. 17
     a4 r r r2. | % m. 18
   \teeny
+  \override MultiMeasureRest.staff-position = #6
     R1. | % m. 19
   \barNumberCheck #20
     R1. | % m. 20
     R1. | % m. 21
-  \override MultiMeasureRest.staff-position = #6
+  \override MultiMeasureRest.staff-position = #10
     R1. | % m. 22
-  \once \override MultiMeasureRest.staff-position = #8
     R1. | % m. 23
     R1. | % m. 24
-  \revert MultiMeasureRest.staff-position
+  %\revert MultiMeasureRest.staff-position
+  \once \override MultiMeasureRest.staff-position = #6
     R1. | % m. 25
     R1. | % m. 26
   \once \override MultiMeasureRest.staff-position = #4
     R1. | % m. 27
+  \revert MultiMeasureRest.staff-position
     R1. | % m. 28
   \normalsize
     r4 fs gs a2.~ | % m. 29

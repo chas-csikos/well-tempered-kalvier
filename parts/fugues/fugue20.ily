@@ -213,7 +213,7 @@ alto = \relative c' {
     e16 d cs d
   \voiceTwo
       e8 f g, e r a | % m. 78
-    a8 d a g f d f f | % m. 79
+    a8[ d] a[ g] f[ d] f[ f] | % m. 79
     e4 %{ \fermata%}  r r8 a16 gs a8 b | % m. 80
     c8 c16 b c8 d e16 d c d e8 f | % m. 81
     gs,8 e r %82
@@ -329,8 +329,8 @@ tenor = \relative c {
     \once\tieDown a4~ a16 f g bf e,8 f bf,4 | % m. 72
   \clef bass
     c2~ c8 c, d e | % m. 73
-    f8 e f g a16 g fs g a bf c8 | % m. 74
-    fs,8 a g fs g f ef d~ | % m. 75
+    f8[ e] f[ g] a16 g fs g a bf c8 | % m. 74
+    fs,8[ a] g[ fs] g[ f] ef[ d] ~ | % m. 75
     d8 g16 a g8 f e e16 f e8 d | % m. 76
     cs16 d e d cs8 b a' cs
   \staffOne \voiceTwo
@@ -338,7 +338,7 @@ tenor = \relative c {
      \once \override Beam.positions = #'(-4 . -5) bf8.
   \staffTwo \voiceOne
       a16 g f e d cs4 r8 cs | % m. 78
-    d8 f d a bf f bf d | % m. 79
+    d8[ f] d[ a] bf[ f] bf[ d] | % m. 79
     b4 %{ \fermata%}  r c r | % m. 80
     c4 r b r | % m. 81
     r8 b16 c d e
@@ -450,7 +450,7 @@ bass = \relative c {
     f16 g a g f8 ef d' fs r c | % m. 74
     bf16 a c bf a g bf a g4. fs8 | % m. 75
     g1~ | % m. 76
-    g2~ g8 e'16 d g f e d | % m. 77
+    g2~ g8 e'16 f g f e d | % m. 77
     cs8 r r4 r8 e' cs a | % m. 78
     d,8 r r4 d8 r r4 | % m. 79
   \barNumberCheck #80
@@ -486,9 +486,7 @@ bass = \relative c {
 }
 
 fugueTwenty = \score {
-  \new PianoStaff \with {
-    edition-id = fugue.twenty
-  } <<
+  \new PianoStaff \with { } <<
     \new Staff = "Up" \with { } <<
       \new Voice \soprano
     >>

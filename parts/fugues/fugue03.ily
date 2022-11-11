@@ -17,8 +17,10 @@ staffTwo = \change Staff = "Down"
 vOne = \relative c'' {
   \global
   \barNumberCheck #1
+  \oneVoice
+    r4 r8
   \voiceOne
-    r4 r8 gs as16 gs fs gs es'8 cs | %1
+      gs as16 gs fs gs es'8 cs | %1
     gs fs16 es fs8 ds' es, cs' ds, bs' | %2
     cs, cs'16 bs cs ds es fs gs fss es fss gs fs es ds | %3
     es4 ~ es16 ds cs es ds cs bs ds cs bs cs as | %4
@@ -202,7 +204,7 @@ vThree = \relative c' {
     R1*4 | %1-4
   \barNumberCheck #5
     r4 r8 gs as16 gs fs gs es'8 cs | %5
-    gs ds16 es fs8 ds' es, cs' ds, bs' | %6
+    gs fs16 es fs8 ds' es, cs' ds, bs' | %6
     cs, cs'16 bs cs ds es cs as bs cs as fss gs as fss | %7
     bs,8 bs'16 as bs cs ds bs gs as bs gs es fss gs es | %8
     as,8 as'16 gs as bs cs as fss gs as fss ds es fss ds | %9

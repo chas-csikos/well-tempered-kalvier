@@ -60,7 +60,7 @@ vOne = \relative c'' {
     e'2. ~ e8 ds e fs gs a | %28
     bs,4.\downprall cs8 ds4 <fs,>2.\arpeggio ~ | %29
   \barNumberCheck #30
-    fs8 e ds cs e bs a' gs fs e fs ds | %30
+    fs8 e ds cs ds bs a' gs fs e fs ds | %30
   \oneVoice
     bs'8 a gs fs gs ds ds' cs bs as bs gs | %31
     gs'4 fs8 e ds cs bs cs ds gs a,4 ~ | %32
@@ -116,7 +116,7 @@ vTwo = \relative c'{
     gs2. <ds bs>2.\arpeggio | %29
   \barNumberCheck #30
     s1.*4 | %30-33
-    r8 ds'8 cs bs s4 <cs>2\arpeggio bs4 | %34
+    r8 ds'8 cs bs cs4 <cs>2\arpeggio bs4 | %34
   \barNumberCheck #35
     r8 b as gs fss gs
       \shape #'( (-0.375 . 0.75)(-0.5 . 0.5)(-0.625 . 0)(-0.625 . 0) ) Slur
@@ -141,11 +141,11 @@ mezzo = \relative c'' {
         cs4 ~ cs2. | % 18
    s4*6*18
       \shape #'((0 . 1.5)(0 . 2)(0.5 . 2)(0.5 . 1.5)) Tie
-      \override Dots.extra-offset = #'(-0.25 . 0)
+      \once\override Dots.extra-offset = #'(-0.25 . 0)
       fss2. ~ fss2 s4 %FIX tie %FIX dot placement
-   \voiceThree
+  \voiceThree
    s2. s2 \once\override NoteColumn.force-hshift = #0.4 ds,8[ fs] ~ |
-   fs8 gs a fs ~ fs4 gs2. %FIX tie
+   fs8 gs a fs ~ fs4 gs2.
 }
 %tenor
 vThree = \relative c' {
@@ -265,6 +265,12 @@ preludeFour = \score {
     \context {
       \Score
       \editionID ##f prelude.four
+    }
+    \context {
+      \PianoStaff
+                \remove "Dot_column_engraver"
+
+      %\override StaffGrouper.staff-staff-spacing = #'((basic-distance . 0)(minimum-distance . 0)(padding . 0)(stretchability . 0))
     }
   }
 }

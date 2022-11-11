@@ -141,7 +141,7 @@ alto = \relative c' {
     ef2. df8 c | % m. 9
   \barNumberCheck #10
     df4 ef f2~ | % m. 10
-    f4 ef8 df ef2 | % m. 11
+    f4 ef8 df ef2 ~ | % m. 11
     ef4 f8 ef df4 c | % m. 12
     bf2. a8 bf | % m. 13
     c4 a bf c~ | % m. 14

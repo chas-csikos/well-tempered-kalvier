@@ -67,7 +67,7 @@ left = \relative fs {
   \barNumberCheck #10
     es8. ds' css as |
     ds8. fs gs as |
-    ds,16[ fs as] fs[ ds bs'] bs4.\trill ~ \break |
+    ds,16[ fs as] fs[ ds bs'] bs4.\trill ~ |
     bs16[ ds fs] ds[ \once \hide Accidental bs fs'] fs[ es ds] cs[ ds es] |
     as,8. es fs cs |
   \barNumberCheck #15

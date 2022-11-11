@@ -16,7 +16,7 @@ vOne = \relative c'' {
   \voiceOne
     R1 | % m. 1
     r4 r8 b cs4 r16 fs, gs as | % m. 2
-    b16 as b cs ds e fs ds b a b cs b a b cs | % m. 3
+    b16 as b cs ds e fs ds b a%{ !%}  b cs b a b cs | % m. 3
     a16 gs a b a gs a b gs fs gs as b4~ | % m. 4
   \barNumberCheck #5
     b4 as b8 b' ds, fs | % m. 5
@@ -141,7 +141,7 @@ vThree = \relative c {
   \barNumberCheck #20
     e16 ds e fs gs a b gs e ds e fs e ds e fs | % m. 20
   \oneVoice
-    ds8[ fs] b,[ e] ~ e8 ds16 cs ds8 b' | % m. 21
+    ds8[ fs] \stemDown b,[ e] ~ \stemNeutral e8 ds16 cs ds8 b' | % m. 21
     cs4 r8 gs a[ gs] a[ e] | % m. 22
     fs8 a gs fs e[ fs] gs[ e] | % m. 23
     a8[ b] cs[ b] a[ e] fs[ cs] | % m. 24

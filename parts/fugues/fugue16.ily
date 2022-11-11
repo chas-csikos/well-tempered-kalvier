@@ -228,10 +228,11 @@ fugueSixteen = \score {
     >>
   >>
   \layout{
-    % \context {
-    %   \Score
-    %   \consists #(custom-line-breaks-engraver '(3 3 3 3 3 2  3 3 2 3 3 3 ))
-    % }
+     \context {
+       \Score
+        \editionID ##f fugue.sixteen
+        %\consists #(custom-line-breaks-engraver '(3 3 3 3 3 2  3 3 2 3 3 3 ))
+    }
   }
 }
 %\fugueSixteen
