@@ -42,7 +42,7 @@ right = \relative fs' {
   \barNumberCheck #25
     fs16[ as, b8] cs16[ as8] ds16[ gs,8] as16[ fs] |
     b4. ~ b16[ es gs] es[ b gs'] |
-    a,16[ cs fs] b,[es gs] cs,[ fs a] d,[ gs b] |
+    a,16[ cs fs] b,[ es gs] cs,[ fs a] d,[ gs b] |
     es,16[ b' d8] b16[ es8] d16[ gs8] es16[ b'] |
     as16[ cs, fs8] gs16[ es] fs[ as, fs'] fs[ as32 gs fs16] ~ |
   \barNumberCheck #30

@@ -543,9 +543,9 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
       opus        = "BWV 861"
     }
     \paper {
-      system-count = #10
-      page-count           = #2
-      max-systems-per-page = #6
+      system-count     = #10
+      page-count       = #2
+      systems-per-page = #5
     }
     \tocAct \markup { \abs-fontsize #9.5 { "G Minor ✻"} \bold\italic "Præludium und Fuga 16" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 861" }
     \tocItem \markup { "Prelude 16" }

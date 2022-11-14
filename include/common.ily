@@ -37,6 +37,7 @@
 
 \layout {
   \accidentalStyle piano
+  \numericTimeSignature
   \set Score.extraNatural = ##f
   
   %better spacing & smaller size than Bonum
