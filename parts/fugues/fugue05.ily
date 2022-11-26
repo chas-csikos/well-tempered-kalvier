@@ -30,7 +30,7 @@ soprano = \relative c'' {
     cs4 b32 cs d e d cs d b g'8. g16 fs8. e16 | % m. 8
     d4 b'16 a b gs gs fs gs e e d e cs %{ \noBreak %} | % m. 9
   \barNumberCheck #10
-    \BachAccentFallendFromGrace
+    % \BachAccentFallendFromGrace
     \grace d16 cs4 a'16 g a fs fs e fs d d c d b | % m. 10
     b4 g32 a b c b a b g e'8. e16 d8. c16 | % m. 11
     b8. cs16 d2 cs4 | % m. 12

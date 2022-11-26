@@ -79,7 +79,7 @@ vTwo = \relative c'' {
     g4 r8 g af af g f | %11
     r \once\showStaffSwitch  \staffTwo \voiceOne af, bf c c\rest af16 g af8 f | %12
     bf c bf af bf g f ef | %13
-    f df' c bf c af g f | %14
+    f[ df'] c[ bf] c af g f | %14
   \barNumberCheck #15
     g \staffOne \voiceTwo g'16 fs g8 c, ef g16 fs g8 a | %15
     d, g16 fs g8 a c,16 d ef4 d16 c | %16
@@ -168,8 +168,6 @@ fugueTwo = \score {
       \context {
         \Score
         \editionID ##f fugue.two
-        barNumberVisibility = #first-bar-number-invisible-save-broken-bars
-        % \consists #(custom-line-breaks-engraver '(3 3 3 3 2 2 2 2 2 3 3 3))
       }
     }
 }

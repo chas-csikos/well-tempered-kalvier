@@ -99,7 +99,7 @@ vTwo = \relative c' {
     b16
   \staffTwo \voiceOne
       a b cs b a b cs a gs a b a gs a b | % m. 25
-    gs8 b e, gs ~ gs fs~ fs4 | % m. 26
+    gs8[ b] e,[ gs] ~ gs fs~ fs4 | % m. 26
     fs4 e ~ e8 %27
   \staffOne \voiceTwo
       e' a4~ | % m. 27

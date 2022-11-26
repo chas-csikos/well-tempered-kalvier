@@ -347,7 +347,7 @@ bass = \relative c {
     c4~ c16 bf af gf f8 df16 ef f8 f16 g | % m. 31
     af4~ af16 gf f ef df8 bf16 c df8 df16 ef | % m. 32
     f4~ f16 ef df c bf c df c bf af g f | % m. 33
-    ef8[ bf'] c af df[ bf] ef c | % m. 34
+    ef8[ bf'] c af df bf ef c | % m. 34
     f8 bf,~ bf ef16 df c8 f~ f16 ef f g | % m. 35
     af16 g f ef d4 ef8 d e c | % m. 36
     f8 f16 ef d8 d16 c b16 g a b c af bf c | % m. 37
@@ -360,7 +360,7 @@ bass = \relative c {
     a4 bf ef r8 ef16 f | % m. 43
     g8 g16 af bf8 bf, c4 r8 c16 d | % m. 44
     ef8 ef16 f g8 g, af4 r8 af16 bf | % m. 45
-    c8 c16 d ef8 ef, f g af a | % m. 46
+    c8 c16 d ef8 ef, f[ g] af[ a] | % m. 46
     g8 r r4 r2 | % m. 47
     R1 | % m. 48
     R1 | % m. 49

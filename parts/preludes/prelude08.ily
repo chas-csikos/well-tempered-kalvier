@@ -56,7 +56,7 @@ soprano = \relative c'' {
   cf2\arpeggio ~ cf16 bf af gf f ef d f \oneVoice  af16 cf d f af cf bf d, |
   %35
   \voiceOne
-  ef4. bf8 \BachAccentFallendFromGrace \grace af8( gf2) f8(\trill ef f4) |
+  ef4. bf8 %{\BachAccentFallendFromGrace%} \grace af8( gf2) f8(\trill ef f4) |
   \oneVoice
   ef2 ~ ef4 ~ ef16 f g af bf4 ~ bf16 ff ef df |
   cf2 ~ cf8. ef16 f g af bf cf8 ~ cf32 bf af gf f16 gf af f |

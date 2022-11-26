@@ -198,7 +198,7 @@ alto = \relative c' {
     e8 d16 cs b cs d8~ d cs16 b as b cs8~ | % m. 66
     cs4 b8 a g16 a b8~ b8 a16 g | % m. 67
     fs16 g a8~ a g16 fs e fs g8~ g fs16 e | % m. 68
-    d4 b'~ b8 as! d cs | % m. 69
+    d4 b'~ b8[ as!] d[ cs] | % m. 69
   \barNumberCheck #70
     fs8 r r4 r r8 b,~ | % m. 70
     b16 cs b a gs4 r16 g fs8~ fs16 e d e | % m. 71
@@ -260,8 +260,8 @@ tenor = \relative c' {
     R1 | % m. 29
     r8 b' g e c' b e ds | % m. 30
   \barNumberCheck #31
-  \clef treble
-    a8[ gs] f'[ e] b[ as] g'[ fs] | % m. 31
+  % \clef treble
+    a8[ gs] \clef treble f'[ e] b[ as] g'[ fs] | % m. 31
     es8[ fs] d[ b] cs2 | % m. 32
     b2 r16 cs ds es fs gs cs, bs | % m. 33
     cs16 b a gs fs gs a cs b gs a cs d b cs es | % m. 34

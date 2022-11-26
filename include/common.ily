@@ -1,5 +1,10 @@
 \include "tweaks.ily"
-% \include "header.ily"
+% moved to editions/us-arch-a.ily
+  % \include "header.ily"
+
+\include "oll-core/package.ily"
+\loadPackage edition-engraver
+\consistToContexts #edition-engraver Score.Staff.Voice
 
 \header {
   tagline = ##f

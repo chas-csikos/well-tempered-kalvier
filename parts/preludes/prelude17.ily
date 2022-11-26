@@ -111,15 +111,13 @@ vThree = \relative af {
   f,4 f' r |
   r8 bf,16 af bf8 df g, bf |
   ef,4 ef' r |
-  r8 af,16 g af8 c f, af |
-  d,8 g16 f g8 bf
-  ef,8 g |
-  c,8 f16 ef
-  f8 af d, f |
-  bf,8  ef16 d ef8 g c,  ef |
-  af,8 f'16 ef  f8 af d, f |
-  bf,8  g'16 f g8 bf ef, g |
-  c,8 af'16 g af8 c f, af |
+  r8 af,16 g af8[ c] f,[ af] |
+  d,8 g16 f g8[ bf] ef,[ g] |
+  c,8 f16 ef f8[ af] d,[ f] |
+  bf,8  ef16 d ef8[ g] c,[  ef] | %12
+  af,8 f'16 ef f8[ af] d,[ f] |
+  bf,8  g'16 f g8[ bf] ef,[ g] |
+  c,8 af'16 g af8[ c] f,[ af] |
   d,8[ f] bf,[ d] ef[ c] |
   g8[ f]  g[ af] bf4 |
   r8 ef16 d  ef8 g bf, ef |
@@ -129,8 +127,8 @@ vThree = \relative af {
   ef8 ef, r df''16 c bf c af bf |
   g16 af f g ef f df ef c df bf c |
   \once\override Beam.auto-knee-gap = #2
-  af8 ef''16 df ef8 af c,  ef |
-  af,8 c16 bf c8 ef af, c |
+  af8 ef''16 df ef8[ af] c,[  ef] |
+  af,8 c16 bf c8[ ef] af,[ c] |
   f,4 ~  f16 af bf c df bf g bf |
   ef,4 ~ ef16 g af bf c af f af |
   df,16  ef c ef df f g af bf g

@@ -125,11 +125,11 @@ vFour = \relative c' {
   ef4. ef16 df c8 c16 bf a8 g16 f |
   bf2 ~ bf8 df16 c bf8 af |
   g8 af16 g f8 ef d g16 f e8 g |
-  c,8 f16 ef df8 c bf bf bf bf |
+  c,8 f16 ef df8 c bf[ bf] bf[ bf] |
 
   bf8[ af] df[ df] df8 c16 bf c8 c |
   c8 f, bf[ bf] bf[ bf] bf[ bf] |
-  bf af df8[ c] bf df c[ c8] |
+  bf af df8 c bf df c[ c8] |
   f,4 \oneVoice r8 f' bf4 r8 bf |
   ef,4 r8 ef af4 r8 af |
   df,4 r8 df \voiceTwo gf8 gf16 f ef8 ef |
@@ -137,10 +137,10 @@ vFour = \relative c' {
   c' c16 bf  a8 a ef' f16 ef  d8 d |
   \oneVoice ef ef16 df c8 c16 bf a8 a bf bf16 af16 |
   gf8 gf16 f ef8 ef16 df c8 c16 bf a8 f |
-  bf bf16 af gf8 gf16 f ef8 ef ef  ef8 |
+  bf bf16 af gf8 gf16 f ef8[ ef] ef[  ef8] |
   \voiceTwo
-  f8 f' f f  f8 f f f |
-  f  f8 f f f f f8 f |
+  f8 f' f f  f8[ f] f[ f] |
+  f8[ f] f[ f] f[ f] f[ f] |
   f ef16 df <c ef>8 <c ef>16 <bf df> <a c>4 \fermata s8 a' |
   bf8 gf16 ef f8 f, bf8 bf bf[ bf] |
   bf bf bf[ bf] bf2\fermata |

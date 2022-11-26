@@ -30,7 +30,7 @@ soprano = \relative c'' {
     as8 b16 cs ds8 cs b4~ b16 cs ds8 | % m. 12
     e16 fs gs8~ gs fs16 e ds4 r16 ds cs b | % m. 13
     as4 b8 cs ds2~ | % m. 14
-    ds8 gs, as b cs as b cs | % m. 15
+    ds8[ gs,] as[ b] cs as b cs | % m. 15
     ds2 cs~ | % m. 16
     cs8 b16 cs ds es fs8~ fs16 es fs gs es8. fs16 | % m. 17
     fs8 fs gs fs e4 b'8 as16 gs | % m. 18
@@ -68,7 +68,7 @@ alto = \relative c' {
     fs4. e8~ e ds16 cs ds e fs gs | % m. 7
     cs,4 r8 ds'16 cs b8 gs r16 ds' cs b | % m. 8
     as4 r16 gs fs e ds4 e8 fs | % m. 9
-    gs2~ gs8 cs, ds e | % m. 10
+    gs2~ gs8[ cs,] ds[ e] | % m. 10
     fs8 b cs ds e r r4 | % m. 11
     r4 r8 fs, ds e16 fs gs as b8~ | % m. 12
     b8 as16 gs as4~ as8 gs16 fss gs8 as | % m. 13
@@ -146,7 +146,7 @@ tenor = \relative c' {
     e4 r16 cs
   \staffTwo \voiceOne
       b a gs4 a8 b | % m. 26
-    cs2~ cs8 fs, gs a | % m. 27
+    cs2~ cs8[ fs,] gs[ a] | % m. 27
     b8 b cs %28
   \staffOne \voiceTwo
       ds e16 b' as gs fs e ds %28

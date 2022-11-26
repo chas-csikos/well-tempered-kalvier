@@ -1,7 +1,7 @@
 \paper {
   print-first-page-number = ##t
-%   min-systems-per-page = #5 %maybe not needed;
-%   max-systems-per-page = #7 %but better off safe?
+  %   min-systems-per-page = #5 %maybe not needed;
+  %   max-systems-per-page = #7 %but better off safe?
 
   ragged-last-bottom = ##f
   ragged-bottom = ##f
@@ -162,10 +162,10 @@
     %   \markup{ "odd" }
 
 }
-
-\include "oll-core/package.ily"
-\loadPackage edition-engraver
-\consistToContexts #edition-engraver Score.Staff.Voice
+% moved to common.ily
+  % \include "oll-core/package.ily"
+  % \loadPackage edition-engraver
+  % \consistToContexts #edition-engraver Score.Staff.Voice
 
 \addEdition archA
 
@@ -567,6 +567,7 @@
   \editionMod archA 15 0/1 fugue.nine.Score  \pageBreak
   \editionModList archA fugue.nine.Score      \break #'(6 8 10 12)
   \editionMod archA 3  1/2 fugue.nine.Staff   \bar""
+  % \editionMod archA 20 1/2 fugue.nine.Staff   \bar""
   \editionMod archA 4  1/4 fugue.nine.Voice.B \shape #'((-0.75 . -0.5)(-0.75 . -0.5)(0 . -0.5)(0 . -0.5)) Tie
   \editionMod archA 10 1/4 fugue.nine.Voice.B \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
   \editionMod archA 11 1/4 fugue.nine.Voice.A \shape #'((0 . 0.25)(0 . 0.25)(0.5 . 0.25)(0.5 . 0.25)) Tie
@@ -794,9 +795,9 @@
   \editionMod archA 18 3/8 prelude.nineteen.Voice.A \shape #'((0 . 0.25)(0 . 0.25)(0.75 . 0.25)(0.75 . 0.25)) Tie
 
 %fugue nineteen
-  \editionMod archA 28 0/1 fugue.nineteen.Score {\allowPageTurn}
-  % \editionModList archA fugue.nineteen.Score  \break #'(26 29 31 33 35 37 40 43 45 47 49)
+  % \editionModList archA fugue.nineteen.Score  \break #'()
   % \editionMod archA 26 0/8 fugue.nineteen.Score \allowPageTurn
+  % \editionMod archA 28 0/1 fugue.nineteen.Score \allowPageTurn
   \editionMod archA 4 5/8 fugue.nineteen.Voice.A \shape #'((0 . 0.25)(0 . 0.25)(0.75 . 0.25)(0.75 . 0.25)) Tie
   \editionMod archA 6 6/8 fugue.nineteen.Voice.A \shape #'(((0 . 0.25)(0 . 0.25)(0 . 0.25)(0 . 0.25)) ((0 . 0.25)(0 . 0.25)(0.75 . 0.25)(0.75 . 0.25))) Tie
   \editionMod archA 11 0/8 fugue.nineteen.Voice.A \shape #'((0 . 0.25)(0 . 0.25)(0.75 . 0.25)(0.75 . 0.25)) Tie
@@ -841,8 +842,13 @@
   \editionMod archA 27 12/16 prelude.twenty.Voice.C \shape #'((0 . 0.125)(0 . 0)(0 . 0)(0 . 0.125)) Tie
 
 %fugue twenty
-  \editionMod archA 36 0/8 fugue.twenty.Score \allowPageTurn
-  \editionMod archA 62 0/8 fugue.twenty.Score \allowPageTurn
+  % \editionModList archA fugue.twenty.Score \break #'(4 7 10 13 16) %page one
+  % \editionModList archA fugue.twenty.Score \noBreak #'(2 3 5 6  8 9 11 12 14 15 17) %page one
+  % \editionModList archA fugue.twenty.Score \break #'(20 23 26 29 33) %page two
+  % \editionMod archA 17 1/2 fugue.twenty.Staff \bar""
+  % \editionMod archA 17 1/2 fugue.twenty.Score \pageBreak
+  % \editionMod archA 36 0/8 fugue.twenty.Score \allowPageTurn
+  % \editionMod archA 62 0/8 fugue.twenty.Score \allowPageTurn
   \editionMod archA 8 7/8 fugue.twenty.Voice.B \shape #'((0 . -0.25)(0 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
   \editionMod archA 10 1/4 fugue.twenty.Voice.A \shape #'((0 . 0.25)(0 . 0.25)(0.75 . 0.25)(0.75 . 0.25)) Tie
   \editionMod archA 12 3/8 fugue.twenty.Voice.B \shape #'((-0.75 . -0.25)(-0.75 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
@@ -863,6 +869,8 @@
   \editionMod archA 64 1/2 fugue.twenty.Voice.A \shape #'((0 . 0)(0 . 0.25)(0 . 0.25)(0 . 0)) Tie
   \editionMod archA 70 1/2 fugue.twenty.Voice.A \shape #'((0 . 0.25)(0 . 0.25)(0.5 . 0.25)(0.5 . 0.25)) Tie
   \editionMod archA 71 1/2 fugue.twenty.Voice.C \shape #'((0 . -0.25)(0 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
+  \editionMod archA 72 0/4 fugue.twenty.Voice.C \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
+  \editionMod archA 73 1/8 fugue.twenty.Voice.B \shape #'((-0.5 . -0.25)(-0.5 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
   %\editionMod archA 73 3/4 fugue.twenty.Voice.A \shape #'(((0 . 0.25)(0 . 0.25)(0 . 0.25)(0 . 0.25)) ((0 . 0.25)(0 . 0.25)(0.75 . 0.25)(0.75 . 0.25))) Tie
   \editionMod archA 74 0/2 fugue.twenty.Voice.A \shape #'((0 . -0.375)(-1 . 0.5)(1 . 0.5)(0 . -0.375)) Tie
   \editionMod archA 75 1/4 fugue.twenty.Voice.A \shape #'((0 . 0.25)(0 . 0.25)(0.75 . 0.25)(0.75 . 0.25)) Tie
@@ -875,7 +883,21 @@
 %prelude twentyone
   %
 %fugue twentyone
+  \editionMod archA 7  1/4 fugue.twentyone.Voice.A \once \override Beam.positions = #'(3.5 . 3.5)
+  \editionMod archA 8  1/4 fugue.twentyone.Voice.A \once \override Beam.positions = #'(3.5 . 3.5)
+  \editionMod archA 11 1/4 fugue.twentyone.Voice.B \once \override Beam.positions = #'(-4.5 . -4.5)
+  \editionMod archA 12 1/4 fugue.twentyone.Voice.B \once \override Beam.positions = #'(-4.5 . -4.5)
+  \editionMod archA 15 1/4 fugue.twentyone.Voice.C \once \override Beam.positions = #'(-3.5 . -3.5)
+  \editionMod archA 16 1/4 fugue.twentyone.Voice.C \once \override Beam.positions = #'(-3.5 . -3.5)
+  \editionMod archA 24 1/4 fugue.twentyone.Voice.A \once \override Beam.positions = #'(4 . 4)
+  \editionMod archA 25 1/4 fugue.twentyone.Voice.A \once \override Beam.positions = #'(4 . 4)
+  \editionMod archA 28 1/4 fugue.twentyone.Voice.B \once \override Beam.positions = #'(-4 . -4)
+  \editionMod archA 29 1/4 fugue.twentyone.Voice.B \once \override Beam.positions = #'(-4 . -4)
   \editionMod archA 35 2/4 fugue.twentyone.Voice.A \shape #'((-0.5 . 0.25)(-0.5 . 0.25)(0.5 . 0.25)(0.5 . 0.25)) Tie
+  \editionMod archA 39 1/4 fugue.twentyone.Voice.B \once \override Beam.positions = #'(5.25 . 5.25)
+  \editionMod archA 40 1/4 fugue.twentyone.Voice.B \once \override Beam.positions = #'(5.25 . 5.25)
+  \editionMod archA 43 1/4 fugue.twentyone.Voice.A \once \override Beam.positions = #'(5 . 5)
+  \editionMod archA 44 1/4 fugue.twentyone.Voice.A \once \override Beam.positions = #'(5 . 5)
 
 %prelude twentytwo
   \editionMod archA 3 0/4 prelude.twentytwo.Voice.B \once \override Beam.positions = #'(-2 . -2.25)
@@ -947,7 +969,11 @@
   \editionMod archA 26 0/1 fugue.twentyfour.Score \allowPageTurn
   \editionMod archA 51 0/1 fugue.twentyfour.Score \allowPageTurn
   \editionMod archA 28 1/2 fugue.twentyfour.Score \bar""
+  % \editionMod archA 61 1/2 fugue.twentyfour.Score \bar""
+  % \editionMod archA 63 1/2 fugue.twentyfour.Score \bar""
+  % \editionMod archA 63 1/2 fugue.twentyfour.Score \pageBreak
   \editionMod archA 69 1/2 fugue.twentyfour.Score \bar""
+  % \editionMod archA 71 1/2 fugue.twentyfour.Score \bar""
   \editionMod archA 7  1/2 fugue.twentyfour.Voice.C \shape #'((0 . 0)(0 . -0.25)(0 . -0.25)(0 . 0)) Tie
   \editionMod archA 8  0/2 fugue.twentyfour.Voice.B \shape #'((0 . 0.25)(0 . 0.25)(0.75 . 0.25)(0.75 . 0.25)) Tie
   \editionMod archA 10 3/4 fugue.twentyfour.Voice.C \shape #'((-0.75 . -0.25)(-0.75 . -0.25)(0 . -0.25)(0 . -0.25)) Tie
@@ -960,6 +986,7 @@
   \editionMod archA 22 3/4 fugue.twentyfour.Voice.B \once\override Beam.positions = #'(-3.5 . -3.75)
   \editionMod archA 23 1/4 fugue.twentyfour.Voice.A \shape #'((-0.75 . -0.25)(-0.75 . -0.25)(0.75 . -0.25)(0.75 . -0.25)) Tie
   \editionMod archA 24 0/4 fugue.twentyfour.Voice.B \once \tieUp
+  \editionMod archA 23 2/8 fugue.twentyfour.Voice.B \once\override Beam.positions = #'(-4 . -4.5)
   \editionMod archA 24 0/4 fugue.twentyfour.Voice.B \shape #'((0 . -0.25)(0 . -0.75)(0 . -0.75)(0 . -0.25)) Tie
   \editionMod archA 26 7/8 fugue.twentyfour.Voice.A \shape #'(((0 . 0.25)(0 . 0.25)(0 . 0.25)(0 . 0.25)) ((0 . 0.25)(0 . 0.25)(0.75 . 0.25)(0.75 . 0.25))) Tie
   \editionMod archA 28 1/8 fugue.twentyfour.Voice.B \shape #'((-0.5 . -0.25)(-0.5 . -0.25)(0 . -0.25)(0 . -0.25)) Tie

@@ -1,8 +1,10 @@
 \version "2.22.2"
 \language "english"
 
-\include "include/editions/us-arch-a.ily"
 \include "include/common.ily"
+\include "include/editions/us-arch-a.ily"
+% TODO: move manuscript beaming to here?
+  %\include "include/editions/bach-beams.ily"
 
 \include "parts/fugues/fugues.ily"
 \include "parts/preludes/preludes.ily"
@@ -650,7 +652,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     }
     \paper {
       page-count       = #4
-      % systems-per-page = #6
+      min-systems-per-page = #5
       page-breaking = #ly:page-turn-breaking
     }
     \tocItem \markup { "Fugue 19 â 3" }
@@ -666,8 +668,8 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     }
     \paper {
       page-count       = #2
-      max-systems-per-page = #6
-      % system-count     = #10
+      system-count     = #10
+      % max-systems-per-page = #6
       % ragged-last-bottom = ##t
       % ragged-last = ##t
     }
@@ -684,8 +686,10 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     }
     \paper {
       page-count       = #6
-      systems-per-page = #6
-      page-breaking = #ly:page-turn-breaking
+      min-systems-per-page = #5
+      max-systems-per-page = #6
+      %systems-per-page = #6
+      %page-breaking = #ly:page-turn-breaking
     }
     \tocItem \markup { "Fugue 20 â 4" }
     \fugueTwenty
@@ -781,7 +785,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     }
     \paper {
       page-count       = #2
-      systems-per-page = 6
+      systems-per-page = #6
     }
     \tocItem \markup { "Fugue 23 â 4" }
     \fugueTwentythree

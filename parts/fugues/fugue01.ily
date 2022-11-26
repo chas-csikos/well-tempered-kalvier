@@ -112,15 +112,15 @@ vThree = \relative c' {
     fs,8 b~ b16 c b a gs8 a4 gs8 | %13
     a4 r8 g a b c8. d32 c | %14
   \barNumberCheck #15
-    b8[e] a,[d] ~ d[ g,] d'4 | %15
-    c8[a] e'4 d8 r r4 | %16
+    b8[ e] a,[ d] ~ d[ g,] d'4 | %15
+    c8[ a] e'4 d8 r r4 | %16
     r8 a[b cs] d8. e32 d c8 f | %17
     b,8 e ~ e16 f e d cs8 r r4 | %18
     r8 a[b cs] d8. e32 d c8 fs | %19
   \barNumberCheck #20
     b,8 e ~ e16 fs e d c2 ~ | %20
     c16 d c b a g a fs g8 b c d | %21
-    e8. f32 e d8[g] c,[f] ~ f16 g f e | %22
+    e8. f32 e d8[ g] c,[ f] ~ f16 g f e | %22
     d4 e8 d ~ d g, g4 ~ | %23
     g8[ c,d e] f8. g32 f e8 a | %24
     d,8 g ~ g16 a g f e d e f g a bf g | %25
@@ -137,14 +137,14 @@ vFour = \relative c {
     s1*3 | %1-3
     R1 | %4
   \barNumberCheck #5
-    r2 r8 c[d e] | %5
-    f8. g32 f e8[a] d,[g] ~ g16 a g f | %6
-    e16 f e d c d c b a8[d] a'[fs] | %7
+    r2 r8 c[ d e] | %5
+    f8. g32 f e8[ a] d,[ g] ~ g16 a g f | %6
+    e16 f e d c d c b a8[ d] a'[ fs] | %7
     g16 a bf g cs,8 d a'4 e | %8
     a16 b c d c b a g c8 r r4 | %9
   \barNumberCheck #10
-    r2 r8 g,[a b] | %10
-    c8. d32 c b8[e] a,[d] ~ d16 e d c | %11
+    r2 r8 g,[ a b] | %10
+    c8. d32 c b8[ e] a,[ d] ~ d16 e d c | %11
     b8 e4 d8 c f4 e8 ~ | %12
     e8 d4 e8 f e16 d e4 | %13
     a,4 r r2 | %14
@@ -152,7 +152,7 @@ vFour = \relative c {
     r8 g[ a b] c4 ~ c16 d32 c b16 e | %15
     a,8 d ~ d16 e d c b8 bf a g | %16
     a8[ fs' g e] d4 e8 f | %17
-    g8. a32 g f8[bf] e,[a] ~ a16 bf a g | %18
+    g8. a32 g f8[ bf] e,[ a] ~ a16 bf a g | %18
     f16 e f d g8 a d,2 ~ | %19
   \barNumberCheck #20
     d16 e d c b a g fs e8[ e' fs g] ~ | %20

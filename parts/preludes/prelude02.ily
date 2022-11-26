@@ -41,8 +41,8 @@ soprano = \relative c'' {
     g' c, b c d c b c g' c, b c d c b c | %23
     af' c, b c d c b c af' c, b c d c b c | %24
   \barNumberCheck #25
-    \staffTwo \stemUp s16*3 f,16^\markup { \small \italic "destra" } af f e f b f d' b af f e f | %25
-    s16*3 g16^\markup { \small \italic "destra" } c g fs g ef' c g' ef c af g af | %26
+    \staffTwo \stemUp s16*3 f,16%{^\markup { \small \italic "destra" }%} af f e f b f d' b af f e f | %25
+    s16*3 g16%{^\markup { \small \italic "destra" }%} c g fs g ef' c g' ef c af g af | %26
     \staffOne \stemNeutral s16*3 c16 ef c b c fs c a' fs ef c b c | %27
     \tempo "Presto"
     r d' c d ef c b c a c b c d b a b | %28
@@ -119,7 +119,7 @@ bass = \relative c {
   \barNumberCheck #25
     \voiceTwo
     g, b d s16 s4 s2 | %25
-    g,16-\markup { \small \italic "sinistra" } c ef s16 s4 s2 | %26
+    g,16%{-\markup { \small \italic "sinistra" }%} c ef s16 s4 s2 | %26
     g,16 a fs' s16 s4 s2 | %27
     \oneVoice
     \once\tieDown g,1~ | %28

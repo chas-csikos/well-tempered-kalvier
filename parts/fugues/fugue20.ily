@@ -44,8 +44,8 @@ soprano = \relative c' {
     c8 c16 b c8 d e16 d c d e8 f | % m. 28
     gs,8 e r a b16 c a b c d b c | % m. 29
   \barNumberCheck #30
-    d8 c b e a, a'4 g8~ | % m. 30
-    g8 c16 b a g fs e ds8 b cs ds | % m. 31
+    d8[ c] b[ e] a, a'4 g8~ | % m. 30
+    g8 c16 b a g fs e ds8[ b] cs[ ds] | % m. 31
     e16 d c b c4 b8 e16 ds e8 fs | % m. 32
     g8 g16 fs g8 a b,2~ | % m. 33
     b4. e16 d c b a b c8 b16 a | % m. 34
@@ -62,7 +62,7 @@ soprano = \relative c' {
   \normalsize
     r8 c16 b c8 d e e16 d e8 f | % m. 43
     g16 f e f g8 a b, g r c | % m. 44
-    d16 e c d e f d e f8 e d g | % m. 45
+    d16 e c d e f d e f8[ e] d[ g] | % m. 45
     c,16 b d c b a g f e8 f16 g a b c d | % m. 46
     b8 a16 g c2 b4 | % m. 47
     c8 e16 f e8 d c cs d e | % m. 48
@@ -92,7 +92,7 @@ soprano = \relative c' {
     c8 c16 d c8 bf a16 bf c bf a8 g | % m. 68
     f'8 a r e d16 cs e d cs b d c | % m. 69
   \barNumberCheck #70
-    b8 cs d a e'2~ | % m. 70
+    b8[ cs] d[ a] e'2~ | % m. 70
     e16 cs d f g4~ g16 e f a bf4~ | % m. 71
     bf16 g a c d,8 e16 g c,4~ c16 f, g bf~ | % m. 72
     bf16 bf a g g8. f16 f4 c'4~ | % m. 73
@@ -160,7 +160,7 @@ alto = \relative c' {
     r2 r8 e'16 ds e8 fs | % m. 31
     g8 g16 fs g8 a b16 a g a b8 c | % m. 32
     ds,8 b r e fs16 g e fs g a fs g | % m. 33
-    a8 g fs b e,4. ds8 | % m. 34
+    a8[ g] fs[ b] e,4. ds8 | % m. 34
     e8 c'16 b a g fs e d8 g16 f e d cs b | % m. 35
     a8 d'16 c b a gs fs e4 a | % m. 36
     r8 a16 gs a8 b c c16 b c8 d | % m. 37
@@ -174,12 +174,12 @@ alto = \relative c' {
     g8 c b a g g f e | % m. 44
     d16 g a b c2 b8 bf | % m. 45
     a8 r r4 r r8 d,~ | % m. 46
-    d16 e c d e f d e f8 e d g | % m. 47
+    d16 e c d e f d e f8[ e] d[ g] | % m. 47
     e16 f e d c b a gs a8 a'16 bf a8 g | % m. 48
     f8 f16 g f8 e d16 e f e d8 c | % m. 49
   \barNumberCheck #50
     b'8 d r a g16 f a g f e g f | % m. 50
-    e8 f g d a'16 b a b b8.\downprall a32 b | % m. 51
+    e8[ f] g[ d] a'16 b a b b8.\downprall a32 b | % m. 51
     c16 d c d d8.\downprall c32 d e16 d c b a g fs e | % m. 52
     fs8 d e fs g fs g a | % m. 53
     d,4. ds8 e e16 ds e8 r | % m. 54
@@ -193,7 +193,7 @@ alto = \relative c' {
     c8 d e16 d f e d8 e f4~ | % m. 61
     f8 e r r16 bf' a4~ a16 cs e d | % m. 62
     e4~ e16 a, cs d e cs d8 r a16 g | % m. 63
-    f8 bf a g~ g f16 e f g a f | % m. 64
+    f8[ bf] a[ g] ~ g f16 e f g a f | % m. 64
     d4 r r2 | % m. 65
     R1 | % m. 66
     \once\tiny R1 | % m. 67
@@ -203,7 +203,7 @@ alto = \relative c' {
     g16 f a g f e g f e8 f g4 | % m. 70
     f4 e8 a~ a16 cs d8 g, c~ | % m. 71
     c16 e f8 bf,4~ bf16 g a c d,4 | % m. 72
-    e8 f4 e8 f c'16 d c8 bf | % m. 73
+    e8[ f] ~ f[ e8] f c'16 d c8 bf | % m. 73
     a8 a16 bf a8 g fs16 g a g fs8 ef | % m. 74
     \once \override NoteColumn.force-hshift = #1.3 d '8 fs r c bf16 a c bf a g bf a | % m. 75
     g8 r r4 r2 | % m. 76
@@ -255,7 +255,7 @@ tenor = \relative c {
   \barNumberCheck #11
     r8 e16 ds e8 fs g g16 fs g8 a | % m. 11
     b16 a g a b8 c ds, b r e | % m. 12
-    fs16 g e fs g a fs g a8 g fs b | % m. 13
+    fs16 g e fs g a fs g a8[ g] fs[ b] | % m. 13
     e,4 b'8 a gs e fs gs | % m. 14
     a8 r r4 r8 a b cs | % m. 15
     d8 r r4 r8 b a4 | % m. 16
@@ -274,8 +274,8 @@ tenor = \relative c {
     \normalsize
     r2 r8 b16 c b8 a | % m. 24
     gs4. e8 d f16 e d8 c | % m. 25
-    b8 c d b e4. f8~ | % m. 26
-    f8 d e d c r r4 | % m. 27
+    b8[ c] d[ b] e4. f8~ | % m. 26
+    f8[ d] e[ d] c r r4 | % m. 27
     r8 a'16 gs a8 b c c16 b c8 d | % m. 28
     e16 d c d e8 f gs, e r a | % m. 29
     b16 c a b c d b c d8 c b e | % m. 30
@@ -291,14 +291,14 @@ tenor = \relative c {
     e2\rest r8 a,16 gs a8 b | % m. 36
     c8 c16 b c8 d e16 d c d e8 f | % m. 37
     gs,8 e r a b16 c a b c d b c | % m. 38
-    d8 c b e a,4. g8~ | % m. 39
+    d8[ c] b[ e] a,4. g8~ | % m. 39
     g8 f16 e f4~ f8 e16 d e4~ | % m. 40
     e4 d~ d16 \once\override NoteColumn.X-offset = #1.25 c d e f g a b | % m. 41
     c2 ~ c4 ~ c16 e d c | % m. 42
     b8 e16 d c b a b c2~ | % m. 43
     c8 g4 d'8~ d e d c | % m. 44
     g4 r r r8 g | % m. 45
-    a16 b g a b c a b c8 b a d | % m. 46
+    a16 b g a b c a b c8[ b] a[ d] | % m. 46
     g,4. c8 d16 f, g a b c d b | % m. 47
     g4 r \once \small r2 | % m. 48
     r8 a16 bf a8 g f f16 g f8 e | % m. 49
@@ -311,7 +311,7 @@ tenor = \relative c {
     fs16 g e fs g a fs g a8 b16 c b c a b | % m. 56
     c8 d16 e d8 c b gs a b | % m. 57
     c8 e, fs gs a4 r8 e | % m. 58
-    f8 g a bf a gs16 fs e8 a | % m. 59
+    f8[ g] a[ bf] a gs16 fs e8 a | % m. 59
     f8 e4 f16 ds e2~ | % m. 60
     e1~ | % m. 61
     e8 r r4 r8 e16 f e8 d | % m. 62
@@ -319,11 +319,11 @@ tenor = \relative c {
     d4. cs8 d a r4 | % m. 64
     r8 a16 gs a8 b c c16 b c8 d | % m. 65
     e16 d c d e8 f gs, e r a | % m. 66
-    b16 c a b c d b cs d8 c b e | % m. 67
+    b16 c a b c d b cs d8[ c] b[ e] | % m. 67
     a,4 r r8 a16 bf c8 bf | % m. 68
     a8
   \clef treble
-      d16 e f g a8~ a g4 f8~ | % m. 69
+      d16 e f g a8 ~ a[ g] ~ g[ f8] ~ | % m. 69
     f8 e \once\tieDown d4~ d16 cs e d cs b d cs | % m. 70
     \once\tieDown d4~ d16 b cs e \once\tieDown f4~ f16 d e g | % m. 71
     \once\tieDown a4~ a16 f g bf e,8 f bf,4 | % m. 72
@@ -335,7 +335,7 @@ tenor = \relative c {
     cs16 d e d cs8 b a' cs
   \staffOne \voiceTwo
       r a' | % m. 77
-     \once \override Beam.positions = #'(-4 . -5) bf8.
+     \once \override Beam.positions = #'(-4 . -4.5) bf8.
   \staffTwo \voiceOne
       a16 g f e d cs4 r8 cs | % m. 78
     d8[ f] d[ a] bf[ f] bf[ d] | % m. 79
@@ -391,7 +391,7 @@ bass = \relative c {
     f16 e d c d e f d b4 c8 d~ | % m. 24
     d8 e d c b d16 c b8 a | % m. 25
     gs8 a b gs a b c f | % m. 26
-    d8 b e e, a a' c, e | % m. 27
+    d8 b e e, a[ a'] c,[ e] | % m. 27
     a,8 f' e d c a' g f | % m. 28
     e8 a16 g f e d c b8 c'16 b a g f e | % m. 29
   \barNumberCheck #30
@@ -399,20 +399,20 @@ bass = \relative c {
     c8 b c a b4. a8 | % m. 31
     g8 e'16 ds e8 fs g g16 fs g8 a | % m. 32
     b16 a g a b8 c ds, b r e | % m. 33
-    fs16 g e fs g a fs g a8 g fs b | % m. 34
+    fs16 g e fs g a fs g a8[ g] fs[ b] | % m. 34
     e,8 e16 ds e8 fs \once\tieUp g2 ~ | % m. 35
     g8 fs16 e fs8 gs a r r4 | % m. 36
     r8 a g f e4 r | % m. 37
     r8 a,16 b c8 d~ d c16 d e8 f~ | % m. 38
     f8 e16 d e8 c f e16 d e f e d | % m. 39
   \barNumberCheck #40
-    cs8 a d c b g c b | % m. 40
+    cs8[ a] d[ c] b g c b | % m. 40
     a8 b16 c b8 g c4 r8 b | % m. 41
     a4 r8 g f16 g' f e d c b a | % m. 42
-    g8 g' a f c' c,16 b c8 d | % m. 43
+    g8[ g'] a[ f] c' c,16 b c8 d | % m. 43
     e8 e16 d e8 fs g16 f e f g8 a | % m. 44
     b,8 g r c d16 e c d e f d e | % m. 45
-    f8 e d g c, d16 e f4~ | % m. 46
+    f8[ e] d[ g] c, d16 e f4~ | % m. 46
     f4 e8 a d, e16 f g8 g, | % m. 47
     c4 r8 e a,16 bf' a g f e d cs | % m. 48
     d2~ d4. e8 | % m. 49
@@ -426,7 +426,7 @@ bass = \relative c {
     d'4 e fs g | % m. 56
     a4 b8 a gs e fs gs | % m. 57
     a8 c, d e f4 r8 cs | % m. 58
-    d8 e f cs d4 a~ | % m. 59
+    d8[ e] f[ cs] d4 a~ | % m. 59
   \barNumberCheck #60
     a8 gs a4 e2~ | % m. 60
     e1~ | % m. 61
@@ -435,7 +435,7 @@ bass = \relative c {
     bf8 g a4 d,8 d16 cs d8 e | % m. 64
     f8 f16 e fs8 gs a16 gs fs gs a8 b | % m. 65
     c,8 a r d e16 f d e f g e fs | % m. 66
-    g8 f e a d, a'~ a16 gs a gs | % m. 67
+    g8[ f] e[ a] d, a'~ a16 gs a gs | % m. 67
     a4~ a16 g f e f4~ f16 e d cs | % m. 68
     d8 r r4 r2 | % m. 69
   \barNumberCheck #70
@@ -500,6 +500,10 @@ fugueTwenty = \score {
     \context {
       \Score
       \editionID ##f fugue.twenty
+    }
+    \context {
+      \PianoStaff
+      \override StaffGrouper.staff-staff-spacing.padding = #3
     }
   }
 }

@@ -38,7 +38,7 @@ vOne = \relative f' {
   \barNumberCheck #20
     e16 f g e bf' df, c bf af bf c f, d' af g f
   \voiceOne
-    e4 f2 e16\rest bf c e |
+    e4 f ~ f e16\rest bf c e |
     f1\fermata
   \bar "|."
 
@@ -127,7 +127,7 @@ vFour = \relative f {
     a4 f bf c |
     d8 e f4 c ~ c8. df16 |
   \barNumberCheck #15
-    ef8 ef' df c bf16 f df bf ~ bf c df bf |
+    ef8[ ef'] df[ c] bf16 f df bf ~ bf c df bf |
     c4. c8 df2 |
     \once \tieDashed
     c1 ~ |

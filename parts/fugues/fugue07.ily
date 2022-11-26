@@ -154,12 +154,12 @@ vThree = \relative c' {
     af8 g r fs16 d c'8 bf a4 \trill | % m. 21
     g16 bf af bf g af f g e c' af f c f c af | % m. 22
     f16 af' g af f g ef f d bf' g ef bf ef bf g | % m. 23
-    ef8[ ef'] f g af[ f] g a | % m. 24
+    ef8[ ef'] f g af f g a | % m. 24
     bf8[ g] a b c c, d ef~ | % m. 25
     ef16 d c d bf ef d ef g8 f r d16 bf | % m. 26
     af'8 g f4 ef8 ef, f g | % m. 27
   \voiceTwo
-    af8 f g a bf bf c d | % m. 28
+    af8[ f] g[ a] bf bf c d | % m. 28
     ef2.~ ef16 d ef f | % m. 29
   \barNumberCheck #30
     g8. f16 ef8 f bf,16 f' d bf af f' d af | % m. 30

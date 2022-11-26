@@ -24,7 +24,7 @@ soprano =  {
     e,2 ~ e16 c a b c[ e d e32 c] |
     d2 ~ d8 g8 ~ g32[ f e d c16 d32 b] |
     c2 ~ c16 d e fs g fs a c, |
-    \BachAccentFallendFromGrace \appoggiatura  c8 b2 ~ b8 b8 a32[ g fs16 g32 fs e16] |
+    %{\BachAccentFallendFromGrace%} \appoggiatura  c8 b2 ~ b8 b8 a32[ g fs16 g32 fs e16] |
     e'8[ ~ e32 fs e ds] e8. fs16 fs4.^\trill r16 e32 fs32 |
   %10
     g2 ~ g16 b, a \once\tieDown g ~ g[ fs32 e ds16 e] |

@@ -108,7 +108,7 @@ vOne = \relative c'' {
     fs8 gs fs e ds e fs4 | %70
     b, e ~ e8 ds cs4 | %71
     b e ~ e8 css ds4 ~ | %72
-    ds gs ~ gs8 gs fss fs ~ | %73
+    ds gs ~ gs8[ gs] fss[ fs] ~ | %73
     fs fs es e ds4 cs | %74
     %# si4. si8 lad4. fad'8 |
   \barNumberCheck #75
@@ -218,7 +218,7 @@ vTwo = \relative c' {
     cs b as b | %69
   \barNumberCheck #70
     cs2 fs, | %70
-    b2. as4 | %71
+    b2 ~ b4 as4 | %71
     gs2 fs4 b ~ | %72
     b8 ds cs b as b cs4 | %73
     gs cs ~ cs8 b as4 ~ | %74

@@ -37,7 +37,7 @@ soprano = \relative c'' {
     r8 g16 af bf8 af16 g af8 af16 g f8 g16 af | % m. 19
   \barNumberCheck #20
     d,8 g4 f16 ef d4. c16 b | % m. 20
-    c4 b8 d g, g' af c, | % m. 21
+    c4 b8 d g,[ g'] af[ c,] | % m. 21
     b4 c r8 d16 ef f8 ef16 d | % m. 22
     ef16 d ef f g8 r r d16 c bf8 c16 d | % m. 23
     ef16 d c bf a8 fs' g r r16 d c bf | % m. 24
@@ -63,9 +63,9 @@ alto = \relative c' {
   \staffTwo \voiceOne
       g, fs4 g | % m. 1
     r8 a16 bf c8 bf16 a bf4 g | % m. 2
-    r8 a16 g f8 g16 a bf8 g e
+    r8 a16 g f8 g16 a bf8[ g] e[
   \staffOne \voiceTwo
-    cs' | % m. 3
+      cs'] | % m. 3
     d4. e8 f e f g | % m. 4
     a8 g16 fs g8 cs, d a'4 g16 fs | % m. 5
     g4 fs8 a d4 r | % m. 6
@@ -91,7 +91,7 @@ alto = \relative c' {
     g8 r r4 r8 f'16 ef d8 ef16 f | % m. 19
   \barNumberCheck #20
     b,8 ef16 d c8 d16 ef f,8 g16 f ef8 f16 g | % m. 20
-    af8 f d b' c4 r8 ef, | % m. 21
+    af8[ f] d[ b'] c4 r8 ef, | % m. 21
     d8 ef16 f g8 a16 b c8 b16 c d8 g,~ | % m. 22
     g8 c16 d ef8 g, fs4 g~ | % m. 23
     g8 a16 bf c8 bf16 a bf d, e fs g4~ | % m. 24
@@ -132,7 +132,7 @@ tenor = \relative c {
     ef4 d c2 | % m. 11
     d4 r r8 f,16 ef d8 ef16 f | % m. 12
     g8[ ef] c[ a'] bf2~ | % m. 13
-    bf8 c16 bf a8 bf16 c d8 bf g e' | % m. 14
+    bf8 c16 bf a8 bf16 c d8[ bf] g[ e'] | % m. 14
     f8. ef16 d4 c4. d16 c | % m. 15
     bf2 a4 r16 bf c d | % m. 16
     ef8 f16 ef d8 g,~ g[ f] bf[ af] | % m. 17
@@ -180,7 +180,7 @@ bass = \relative c {
   \normalsize
     r8 d ef g, fs4 g | % m. 5
     r8 a16 bf c8 bf16 a bf4 g | % m. 6
-    r8 a16 g f8 g16 a bf8 g e cs' | % m. 7
+    r8 a16 g f8 g16 a bf8[ g] e[ cs'] | % m. 7
     d1 | % m. 8
     e8 a16 g fs8 g16 a bf,8 c16 d ef8 d16 c | % m. 9
   \barNumberCheck #10

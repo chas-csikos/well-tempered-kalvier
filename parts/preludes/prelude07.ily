@@ -169,7 +169,7 @@ vTwo = \relative c'' {
   \voiceTwo
       r16 a bf c bf a g f | %31
     bf2 ~ bf16 bf c d c bf a g | %32
-    a2 ~ %{ \bar""\pageBreak %} a!8 d, g f | %33
+    a2 ~ %{ \bar""\pageBreak %} a!8[ d,] g[ f] | %33
     ef2 d4 c | %34
     bf4 ef2 d4 | %35
     g4 f ~ f16 f g af g f e f | %36
