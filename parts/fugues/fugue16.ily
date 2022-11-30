@@ -50,7 +50,7 @@ soprano = \relative c'' {
     r2 r8 d16 ef f8 ef16 d | % m. 30
     ef4~ ef16 d c bf a4 r8 ef'16 d | % m. 31
     c8 d16 ef d8 e16 fs g8 fs16 g a4~ | % m. 32
-    a8 d, g f ef d c bf | % m. 33
+    a8[ d,] g[ f] ef[ d] c[ bf] | % m. 33
     a2 g \fermata | % m. 34
   \bar "|."
 }

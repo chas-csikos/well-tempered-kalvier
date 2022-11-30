@@ -52,7 +52,7 @@ soprano = \relative c'' {
     d g' f g af f ef f d f ef f g ef d ef | %30
     \stemUp c ef d ef f d c d b d c d ef c b c | %31
     g c b c af f' ef f g, ef' d ef f, d' c d | %32
-    ef, c' bf %{ b? %} c af f ef f g ef d ef f d c d | %33
+    ef, c' b %{ bf? %} c af f ef f g ef d ef f d c d | %33 %bach didn't write and accidental or cautionary/cancel
   \tempo "Adagio"
     \once\tieUp e8\arpeggio~e32 c d e f64 g af bf c bf af g f16 g32 e
       \once\tieUp f8\mordent\arpeggio~f32 g f e f g af g f64 ef d ef f d ef f | %34

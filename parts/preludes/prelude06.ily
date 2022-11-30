@@ -114,7 +114,6 @@ left = \relative c {
         \omit TupletBracket
         s2 g8 a g f |  %20a
         e8[ g] f[ e] d e f4 | %21a
-        \override TupletNumber.text = "(3)"
         e8 g f e f[ e] f ~ \tuplet 3/2 { f16[ e d] } | %22a
         cs8[ e] g[ bf] a[ \staffOne \stemDown d] f a | %23a
         gs8 g\rest g4\rest g2\rest | %24a
@@ -125,9 +124,7 @@ left = \relative c {
         fs8[ d] fs8[ d8] ~ d2 ~ | %20b
         d2 gs,4. a8 | %21b
         bf2 b4. bf8 | %22b
-        \override TupletNumber.text = "(3)"
         a4. ~ \tuplet 3/2 { a16 cs e } a4. ~
-        \override TupletNumber.text = "(3)"
           \tuplet 3/2 { \once \override TupletNumber.whiteout = #1 a16 \staffOne d f } | %23b
         \staffTwo R1 | %24b
       }
