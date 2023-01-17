@@ -12,7 +12,7 @@
 tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup text))
 
 \paper { first-page-number = #0 }
-%\pointAndClickOff
+% \pointAndClickOff
 
 \book {
   \bookpart {
@@ -129,14 +129,14 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "PRÆLUDIUM 3"
       titleRunner = "Prelude 3"
-      key         = "C♯ Major"
+      key         = \markup { \concat { "C"\super\vcenter\sharp" Major" } }
       opus        = "BWV 848"
     }
     \paper {
       page-count       = #2
       systems-per-page = #7
     }
-    \tocAct \markup { \abs-fontsize #9.5 { "C♯ Major ✻" } \bold\italic "Præludium und Fuga 3" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 848" }
+    \tocAct \markup { \abs-fontsize #9.5 { \concat { "C"\super\vcenter\sharp" Major ✻" } } \bold\italic "Præludium und Fuga 3" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 848" }
     \tocItem \markup { "Prelude 3" }
     \preludeThree
   }
@@ -144,7 +144,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "FUGA 3 â 3"
       titleRunner = "Fugue 3"
-      key         = "C♯ Major"
+      key         = \markup { \concat { "C"\super\vcenter\sharp" Major" } }
       opus        = "BWV 848"
     }
     \paper {
@@ -160,14 +160,14 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "PRÆLUDIUM 4"
       titleRunner = "Prelude 4"
-      key         = "C♯ Minor"
+      key         = \markup { \concat { "C"\super\vcenter\sharp" Minor" } }
       opus        = "BWV 849"
     }
     \paper {
       page-count       = #2
       systems-per-page = #6
     }
-    \tocAct \markup { \abs-fontsize #9.5 { "C♯ Minor ✻" } \bold\italic "Præludium und Fuga 4"  \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 849" }
+    \tocAct \markup { \abs-fontsize #9.5 { \concat { "C"\super\vcenter\sharp" Minor ✻" } } \bold\italic "Præludium und Fuga 4"  \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 849" }
     \tocItem \markup { "Prelude 4"  }
     \preludeFour
   }
@@ -175,7 +175,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "FUGA 4 â 5"
       titleRunner = "Fugue 4"
-      key         = "C♯ Minor"
+      key         = \markup { \concat { "C"\super\vcenter\sharp" Minor" } }
       opus        = "BWV 849"
     }
     \paper {
@@ -254,7 +254,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "PRÆLUDIUM 7"
       titleRunner = "Prelude 7"
-      key         = "E♭ Major"
+      key         = \markup { \concat{"E"\super\vcenter\flat" Major " } }
       opus        = "BWV 852"
     }
     \paper {
@@ -262,7 +262,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
       systems-per-page = #6
       page-breaking = #ly:page-turn-breaking
     }
-    \tocAct \markup { \abs-fontsize #9.5 { "E♭ Major ✻" } \bold\italic "Præludium und Fuga 7" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 852" }
+    \tocAct \markup { \abs-fontsize #9.5 { \concat{"E"\super\vcenter\flat" Major ✻"} } \bold\italic "Præludium und Fuga 7" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 852" }
     \tocItem \markup { "Prelude 7" }
     \preludeSeven
   }
@@ -270,7 +270,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "FUGA 7 â 3"
       titleRunner = "Fugue 7"
-      key         = "E♭ Major"
+      key         = \markup { \concat{"E"\super\vcenter\flat" Major " } }
       opus        = "BWV 852"
     }
     \paper {
@@ -285,7 +285,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "PRÆLUDIUM 8"
       titleRunner = "Prelude 8"
-      key         = "E♭ Minor"
+      key         = \markup { \concat { "E"\super\vcenter\flat} " Minor" }
       opus        = "BWV 853"
     }
     \paper {
@@ -293,7 +293,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
       systems-per-page = #6
       markup-system-spacing.basic-distance   = #(+ (/ (- top-staff-margin top-margin) staff-space) 4)
     }
-    \tocAct \markup { \abs-fontsize #9.5 {"E♭/D♯ Minor ✻"} \bold\italic "Præludium und Fuga 8" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 853" }
+    \tocAct \markup { \abs-fontsize #9.5 {\concat { "E"\super\vcenter\flat"/D"\super\vcenter\sharp" Minor ✻" } } \bold\italic "Præludium und Fuga 8" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 853" }
     \tocItem \markup { "Prelude 8" }
     \preludeEight
   }
@@ -301,7 +301,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "FUGA 8 â 3"
       titleRunner = "Fugue 8"
-      key         = "D♯ Minor"
+      key         = \markup { \concat{"D"\super\vcenter\sharp" Minor " } }
       opus        = "BWV 853"
     }
     \paper {
@@ -444,14 +444,14 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
      \header{
        title       = "PRÆLUDIUM 13"
        titleRunner = "Prelude 13"
-       key         = "F♯ Major"
+       key         = \markup { \concat { "F"\super\vcenter\sharp" Major" } }
        opus        = "BWV 858"
      }
      \paper {
        page-count       = #2
        systems-per-page = #6
      }
-     \tocAct \markup { \abs-fontsize #9.5 {"F♯ Major ✻"} \bold\italic "Præludium und Fuga 13" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 858" }
+     \tocAct \markup { \abs-fontsize #9.5 \concat { "F"\super\vcenter\sharp" Major ✻" } \bold\italic "Præludium und Fuga 13" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 858" }
      \tocItem \markup { "Prelude 13" }
      \preludeThirteen
    }
@@ -459,7 +459,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
      \header{
        title       = "FUGA 13 â 3"
        titleRunner = "Fugue 13"
-       key         = "F♯ Major"
+       key         = \markup { \concat { "F"\super\vcenter\sharp" Major" } }
        opus        = "BWV 858"
      }
      \paper {
@@ -474,14 +474,14 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
      \header{
        title       = "PRÆLUDIUM 14"
        titleRunner = "Prelude 14"
-       key         = "F♯ Minor"
+       key         = \markup { \concat { "F"\super\vcenter\sharp" Minor" } }
        opus        = "BWV 859"
      }
      \paper {
        page-count       = #2
        systems-per-page = #6
      }
-     \tocAct \markup { \abs-fontsize #9.5 {"F♯ Minor ✻"} \bold\italic "Præludium und Fuga 14" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 859" }
+     \tocAct \markup { \abs-fontsize #9.5 \concat { "F"\super\vcenter\sharp" Minor ✻" } \bold\italic "Præludium und Fuga 14" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 859" }
      \tocItem \markup { "Prelude 14" }
      \preludeFourteen
    }
@@ -489,7 +489,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
      \header{
        title       = "FUGA 14 â 4"
        titleRunner = "Fugue 14"
-       key         = "F♯ Minor"
+       key         = \markup { \concat { "F"\super\vcenter\sharp" Minor" } }
        opus        = "BWV 859"
      }
      \paper {
@@ -572,14 +572,14 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "PRÆLUDIUM 17"
       titleRunner = "Prelude 17"
-      key         = "A♭ Major"
+      key         = \markup { \concat { "A"\super\vcenter\flat" Major" } }
       opus        = "BWV 862"
     }
     \paper {
       page-count       = #2
       systems-per-page = #6
     }
-    \tocAct \markup { \abs-fontsize #9.5 {"A♭ Major ✻"} \bold\italic "Præludium und Fuga 17" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 862" }
+    \tocAct \markup { \abs-fontsize #9.5 { \concat { "A"\super\vcenter\flat" Major ✻"} } \bold\italic "Præludium und Fuga 17" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 862" }
     \tocItem \markup { "Prelude 17" }
     \preludeSeventeen
   }
@@ -587,7 +587,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "FUGA 17 â 4"
       titleRunner = "Fugue 17"
-      key         = "A♭ Major"
+      key         = \markup { \concat { "A"\super\vcenter\flat" Major" } }
       opus        = "BWV 862"
     }
     \paper {
@@ -602,14 +602,14 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "PRÆLUDIUM 18"
       titleRunner = "Prelude 18"
-      key         = "G♯ Minor"
+      key         = \markup { \concat { "G"\super\vcenter\sharp" Minor" } }
       opus        = "BWV 863"
     }
     \paper {
       page-count       = #2
       min-systems-per-page = #5
     }
-    \tocAct \markup { \abs-fontsize #9.5 {"G♯ Minor ✻"} \bold\italic "Præludium und Fuga 18" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 863" }
+    \tocAct \markup { \abs-fontsize #9.5 { \concat { "G"\super\vcenter\sharp" Minor ✻"} } \bold\italic "Præludium und Fuga 18" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 863" }
     \tocItem \markup { "Prelude 18" }
     \preludeEighteen
   }
@@ -617,7 +617,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "FUGA 18 â 4"
       titleRunner = "Fugue 18"
-      key         = "G♯ Minor"
+      key         = \markup { \concat { "G"\super\vcenter\sharp" Minor" } }
       opus        = "BWV 863"
     }
     \paper {
@@ -699,7 +699,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "PRÆLUDIUM 21"
       titleRunner = "Prelude 21"
-      key         = "B♭ Major"
+      key         = \markup { \concat { "B"\super\vcenter\flat" Major" } }
       opus        = "BWV 866"
     }
     \paper {
@@ -712,7 +712,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
           (stretchability   . 8)
         )
     }
-    \tocAct \markup { \abs-fontsize #9.5 {"B♭ Major ✻"} \bold\italic "Præludium und Fuga 21" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 866" }
+    \tocAct \markup { \abs-fontsize #9.5 {\concat { "B"\super\vcenter\flat" Major ✻" } } \bold\italic "Præludium und Fuga 21" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 866" }
     \tocItem \markup { "Prelude 21" }
     \preludeTwentyone
   }
@@ -720,7 +720,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "FUGA 21 â 3"
       titleRunner = "Fugue 21"
-      key         = "B♭ Major"
+      key         = \markup { \concat { "B"\super\vcenter\flat" Major" } }
       opus        = "BWV 866"
     }
     \paper {
@@ -735,14 +735,14 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "PRÆLUDIUM 22"
       titleRunner = "Prelude 22"
-      key         = "B♭ Minor"
+      key         = \markup { \concat { "B"\super\vcenter\flat" Minor" } }
       opus        = "BWV 867"
     }
     \paper {
       page-count       = #2
       systems-per-page = #6
     }
-    \tocAct \markup { \abs-fontsize #9.5 {"B♭ Minor ✻"} \bold\italic "Præludium und Fuga 22" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 867" }
+    \tocAct \markup { \abs-fontsize #9.5 { \concat { "B"\super\vcenter\flat" Minor ✻"} } \bold\italic "Præludium und Fuga 22" \abs-fontsize #9.5 \override #'(font-features . ("onum")) "✻ BWV 867" }
     \tocItem \markup { "Prelude 22" }
     \preludeTwentytwo
   }
@@ -750,7 +750,7 @@ tocAct = #(define-music-function (text) (markup?) (add-toc-item! 'tocActMarkup t
     \header{
       title       = "FUGA 22 â 5"
       titleRunner = "Fugue 22"
-      key         = "B♭ Minor"
+      key         = \markup { \concat { "B"\super\vcenter\flat" Minor" } }
       opus        = "BWV 867"
     }
     \paper {

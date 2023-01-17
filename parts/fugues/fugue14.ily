@@ -160,7 +160,7 @@ tenor = \relative c {
     b2 cs8 b a2 r4 | % m. 33
     r8 fs b4. a8 gs4. gs8 cs4~ | % m. 34
     cs8 e ds cs cs b b2.~ | % m. 35
-    b8 %{\once \omit Accidental %} d cs b b a a2.~ | % m. 36 %% sharp/natural missing in manuscript
+    b8 %{\once \omit Accidental %} %{\once\override Accidental.font-size = #-3%} d cs b b a a2.~ | % m. 36 %% sharp/natural missing in manuscript
     a4. a8 gs fs es b' a gs gs fs | % m. 37
     fs8 gs gs fs fs es es4 fs8 es fs4 | % m. 38
     gs4 cs2 r8 fs, cs' b b as | % m. 39

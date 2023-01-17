@@ -125,7 +125,7 @@ left = \relative c {
         d2 gs,4. a8 | %21b
         bf2 b4. bf8 | %22b
         a4. ~ \tuplet 3/2 { a16 cs e } a4. ~
-          \tuplet 3/2 { \once \override TupletNumber.whiteout = #1 a16 \staffOne d f } | %23b
+          \tuplet 3/2 { \once \override TupletNumber.whiteout = #1 \once \override TupletNumber.Y-offset = #-1.5 a16 \staffOne d f } | %23b
         \staffTwo R1 | %24b
       }
     >>

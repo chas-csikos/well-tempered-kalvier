@@ -162,10 +162,10 @@
     %   \markup{ "odd" }
 
 }
-% moved to common.ily
-  % \include "oll-core/package.ily"
-  % \loadPackage edition-engraver
-  % \consistToContexts #edition-engraver Score.Staff.Voice
+ 
+\include "oll-core/package.ily"
+\loadPackage edition-engraver
+\consistToContexts #edition-engraver Score.Staff.Voice
 
 \addEdition archA
 
